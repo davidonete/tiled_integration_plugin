@@ -17,20 +17,21 @@ This is the complete list of features currently available:
 * Fix to allow importing Tile Collisions from Tiled
 
 ## How to Use
-1. Purchase the plugin from the [Unreal Engine Marketplace](https://www.unrealengine.com/marketplace/en-US/store) and install it into your Unreal Engine version via the Epic Games Launcher
-2. Create a new project or open an existing one and activate the plugin in Edit > Plugins > TiledIntegration. You will have to restart Unreal Engine afterwards.
+1.- Purchase the plugin from the [Unreal Engine Marketplace](https://www.unrealengine.com/marketplace/en-US/store) and install it into your Unreal Engine version via the Epic Games Launcher.
+
+2.- Create a new project or open an existing one and activate the plugin in Edit > Plugins > TiledIntegration. You will have to restart Unreal Engine afterwards.
 
 ![Activate plugin](https://davidonete.github.io/assets/images/tiled_integration_plugin/activate_plugin.jpg)
 
-3. After restarting Unreal Engine, you should see a new icon on the toolbar next to the play button. 
+3.- After restarting Unreal Engine, you should see a new icon on the toolbar next to the play button. 
 
 ![New button](https://davidonete.github.io/assets/images/tiled_integration_plugin/new_button.jpg)
 
-4. If you click it it should open the Control Panel from where you will be able to manage the Tiled Resources.
+4.- If you click it it should open the Control Panel from where you will be able to manage the Tiled Resources.
 
 ![Control Panel](https://davidonete.github.io/assets/images/tiled_integration_plugin/control_panel.jpg)
 
-5. To get started simply click on the Import button at the bottom and look for a Tiled Tile Map or Tile Set. It will ask you for the Tiled Tile Map or Tile Set to import.
+5.- To get started simply click on the Import button at the bottom and look for a Tiled Tile Map or Tile Set. It will ask you for the Tiled Tile Map or Tile Set to import.
    
 **Note:** The file to be imported must be saved as a JSON file in Tiled.
 
@@ -40,13 +41,13 @@ This is the complete list of features currently available:
 
 ![Pick asset](https://davidonete.github.io/assets/images/tiled_integration_plugin/pick_asset.jpg)
 
-6. After picking the file to import you will be requested to specify the place where you want the asset to be imported to and which name you want to set. Please pick a location that is within your project content folder. You can see on the title of the window what kind of asset you want to save.
+6.- After picking the file to import you will be requested to specify the place where you want the asset to be imported to and which name you want to set. Please pick a location that is within your project content folder. You can see on the title of the window what kind of asset you want to save.
 
 **Note:** Please pick a definitive name and location as **MOVING** or **RENAMING** the asset after it has been imported is not supported and you will need to start the process again if so.
 
 ![Pick asset](https://davidonete.github.io/assets/images/tiled_integration_plugin/save_asset.jpg)
 
-7. If everything went well, you should see your imported assets in the place where you specified it as well as a new dropdown option on the Control Panel from where you can manage your imported assets. From this menu you will be able to do the following:
+7.- If everything went well, you should see your imported assets in the place where you specified it as well as a new dropdown option on the Control Panel from where you can manage your imported assets. From this menu you will be able to do the following:
    - **Status:** Check if the asset or the file has any issues.
    - **Asset Location:** The location of the Unreal Engine Asset.
    - **Source Location:** The location of the Tiled Asset.
