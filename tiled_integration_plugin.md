@@ -59,3 +59,5 @@ This is the complete list of features currently available:
    - **Delete:** Delete the selected asset from Unreal Engine and it's dependencies.
 
 ![Pick asset](https://davidonete.github.io/assets/images/tiled_integration_plugin/imported_assets.jpg)
+
+## Advanced
