@@ -1,5 +1,8 @@
-title: Slate theme
-description: Slate is a theme for GitHub Pages.
-show_downloads: true
+title: Flekz Games Plugins
+description: Documentation for plugins
+show_downloads: false
 google_analytics:
 theme: jekyll-theme-slate
+remote_theme: pages-themes/slate@v0.2.0
+plugins:
+- jekyll-remote-theme # add this line to the plugins list if you already have one
