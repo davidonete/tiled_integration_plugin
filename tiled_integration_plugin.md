@@ -60,4 +60,31 @@ This is the complete list of features currently available:
 
 ![Pick asset](https://davidonete.github.io/assets/images/tiled_integration_plugin/imported_assets.jpg)
 
-## Advanced
+## Custom Properties
+In order to support Tiled Custom Properties on Tile Maps, Tile Sets, Tiles and Layers, we have extended the default Paper2D classes to support this. We will explain how to access this classes from Blueprints and from C++ in the following sections.
+
+### Tile Map Custom Properties
+#### Blueprint
+In order to access the Custom Properties of a Tile Map from blueprint you just need a reference to your Paper Tile Map Actor that is placed in your level and use the method that we provided ``Get Tile Map From Actor``. From there you can use ``Get Custom Properties`` method and get the property you want by name and type.
+
+![Tile Map Custom Properties Blueprint](https://davidonete.github.io/assets/images/tiled_integration_plugin/tile_map_custom_properties_blueprint.jpg)
+
+#### C++
+From C++ the process is very similar. You will need a reference to the Paper Tile Map Actor and call the helper method ``GetTileMapFromActor`` from ``UTiledIntegrationTileMapLibrary`` located in ``TiledIntegrationTileMap.h`` or you can directly cast from ``UPaperTileMap`` to ``UTiledIntegrationTileMap`` and use the ``GetCustomProperties`` method to access the properties. 
+
+If you want to use a custom class for Tile Maps you can inherit from our ``UTiledIntegrationTileMap`` class and remember to change the default class type in the Plugin Configuration (explained in a section below).
+
+### Tile Layer Custom Properties
+#### Blueprint
+There are multiple options available for accessing a Tile Layer Custom Properties:
+* Use the ``Get Tile Layer From Actor`` method which requires a reference to the Paper Tile Map Actor placed in your level, and use ``Get Custom Properties`` method and get the property you want by name and type.
+* Use the ``Get Layer`` method from the Tiled Integration Tile Map which is returned by the ``Get Tile Map From Actor`` method explained above, and use ``Get Custom Properties`` method and get the property you want by name and type.
+
+![Tile Layer Custom Properties Blueprint](https://davidonete.github.io/assets/images/tiled_integration_plugin/tile_layer_custom_properties_blueprint.jpg)
+
+#### C++
+There are multiple options available for accessing a Tile Layer Custom Properties:
+* Use the helper method method ``GetTileLayerFromActor`` from ``UTiledIntegrationTileMapLibrary`` located in ``TiledIntegrationTileMap.h`` and then use the ``GetCustomProperties`` method to access the custom properties.
+* Use the ``GetLayer`` method in ``UTiledIntegrationTileMap`` and then use the ``GetCustomProperties`` method to access the custom properties.
+
+If you want to use a custom class for Tile Layers you can inherit from our ``UTiledIntegrationTileLayer`` class and remember to change the default class type in the Plugin Configuration (explained in a section below).
