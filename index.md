@@ -35,7 +35,7 @@ This is the complete list of features currently available:
 
 **Note:** When importing a Tile Map and Tile Sets it will also import it's dependencies (Tile Set and/or Textures)
 
-**Note:** The plugin comes with some example files that you can try located in "\<Unreal Engine Installation Folder\>/Engine/Plugins/TiledIntegration/ExampleTiledFiles" (e.g. "C:\Program Files\Epic Games\UE_5.4\Engine\Plugins\TiledIntegration\Content\ExampleTiledFiles")
+**Note:** The plugin comes with some example files that you can try located in "\<Unreal Engine Installation Folder\>/Engine/Plugins/Marketplace/TiledIntegration/ExampleTiledFiles" (e.g. "C:\Program Files\Epic Games\UE_5.4\Engine\Plugins\TiledIntegration\Content\ExampleTiledFiles")
 
 ![Pick asset](https://davidonete.github.io/tiled_integration_plugin/assets/images/tiled_integration_plugin/pick_asset.jpg)
 
