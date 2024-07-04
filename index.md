@@ -2,8 +2,6 @@
 layout: default
 ---
 
-# Tiled Integration Plugin
-
 ## Description
 
 This is a plugin for Unreal Engine 5 that simplifies the work of importing Tile Maps and Tile Sets made with [Tiled](https://www.mapeditor.org/). In addition it adds some quality time improvements and fixes from the default importer that came with Unreal Engine by default. 
