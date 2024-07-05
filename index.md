@@ -10,9 +10,12 @@ This is the complete list of features currently available:
 
 * Import Tiled Tile Maps
 * Import Tiled Tile Sets (and textures)
-* Auto Reimport when modified from Tiled
+* Auto Reimport assets when modified from Tiled
 * Support for Custom Properties for Tile Maps, Tile Sets, Layers and Tiles
 * Fix to allow importing Tile Collisions from Tiled
+* Some Unreal Engine configuration exposed to be set up from Tiled.
+
+**Note:** This tool only allows one type of comunication (from Tiled to Unreal Engine), which means that most if not all configurations made from Unreal Engine in the imported files will get overriden when being imported from Tiled. For that reason is recomended to only modify the Tiled files unless is completely necessary.
 
 ## How to Use
 **1.-** Purchase the plugin from the [Unreal Engine Marketplace](https://www.unrealengine.com/marketplace/en-US/store) and install it into your Unreal Engine version via the Epic Games Launcher.
