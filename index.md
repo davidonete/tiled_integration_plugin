@@ -15,6 +15,8 @@ This is the complete list of features currently available:
 * Fix to allow importing Tile Collisions from Tiled
 * Some Unreal Engine configuration exposed to be set up from Tiled.
 
+[Quick Video Guide](https://youtu.be/9oi3xKPaqhk)
+
 **Note:** This tool only allows one way of comunication (from Tiled to Unreal Engine), which means that most if not all changes made from Unreal Engine in the imported files will get overriden when being imported from Tiled. For that reason is recomended to only modify the Tiled files unless is completely necessary.
 
 ## How to Use
