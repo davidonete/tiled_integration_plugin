@@ -21,7 +21,7 @@ This is the complete list of features currently available:
 **Note:** This tool expects the user to use Tiled as the main Tile Map and Tile Set editor, doing changes such as modifying tiles, layers, collisions and/or dimensions directly into Unreal Engine can lead to unexpected behavior and it is not recommended.
 
 ## How to Use
-**1.-** Get the plugin from the [Unreal Engine Marketplace](https://www.unrealengine.com/marketplace/en-US/store) and install it into your Unreal Engine version via the Epic Games Launcher.
+**1.-** Get the plugin from the [Unreal Engine Marketplace](https://www.unrealengine.com/marketplace/en-US/product/7cde7c5f731743888f4068c8e8c24f6a) and install it into your Unreal Engine version via the Epic Games Launcher.
 
 **2.-** Create a new project or open an existing one and activate the plugin in Edit > Plugins > TiledIntegration. You will have to restart Unreal Engine afterwards.
 
