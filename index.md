@@ -13,14 +13,15 @@ This is the complete list of features currently available:
 * Auto Reimport assets when modified from Tiled
 * Support for Custom Properties for Tile Maps, Tile Sets, Layers and Tiles
 * Fix to allow importing Tile Collisions from Tiled
+* Animated Tiles
 * Some Unreal Engine configuration exposed to be set up from Tiled.
 
-[Quick Video Guide](https://youtu.be/9oi3xKPaqhk)
+[Quick Video Guide](https://www.youtube.com/watch?v=AQnpu9husAo)
 
-**Note:** This tool only allows one way of comunication (from Tiled to Unreal Engine), which means that most if not all changes made from Unreal Engine in the imported files will get overriden when being imported from Tiled. For that reason is recomended to only modify the Tiled files unless is completely necessary.
+**Note:** This tool expects the user to use Tiled as the main Tile Map and Tile Set editor, doing changes such as modifying tiles, layers, collisions and/or dimensions directly into Unreal Engine can lead to unexpected behavior and it is not recommended.
 
 ## How to Use
-**1.-** Purchase the plugin from the [Unreal Engine Marketplace](https://www.unrealengine.com/marketplace/en-US/store) and install it into your Unreal Engine version via the Epic Games Launcher.
+**1.-** Get the plugin from the [Unreal Engine Marketplace](https://www.unrealengine.com/marketplace/en-US/store) and install it into your Unreal Engine version via the Epic Games Launcher.
 
 **2.-** Create a new project or open an existing one and activate the plugin in Edit > Plugins > TiledIntegration. You will have to restart Unreal Engine afterwards.
 
@@ -137,6 +138,18 @@ There are multiple options available for accessing a Tile Set Custom Properties:
 * Use the ``GetTileSet`` method in ``UTiledIntegrationTileMap`` and then use ``GetCustomProperties`` to access the custom properties.
   
 * Get the Layer from one of the methods explained above and then use the ``GetTileSet`` method  and ``GetCustomProperties`` to access the custom properties.
+
+## Collisions
+You can add collisions to specific tiles by using the [Tiled Collision Editor](https://doc.mapeditor.org/en/stable/manual/editing-tilesets/#id2) tool. The supported collision types are Rectangles, Ellipses and Polygons.
+
+**Note:** Rotations are not supported at the moment.
+
+**Note:** Ellipses must be in the shape of circles (same width and height).
+
+## Animated Tiles
+You can add animated tiles to your Tile Set and Tile Map by using the [Tiled Animation Editor](https://doc.mapeditor.org/en/stable/manual/editing-tilesets/#id3) tool and placing the animated tile into your Tile Map.
+
+**Note:** Placing many animated tiles in very big Tile Maps can become costly quite quickly. It is recommended that you keep the tile maps as small as possible (ideally combine small tile maps together to make a big one and show/hide them when needed)
 
 ## Plugin Configuration
 You can configure some aspects of the plugin to adjust it better to your needs. The configuration can be found in Edit > Editor Preferences > Tiled Integration.
