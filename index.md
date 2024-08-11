@@ -104,6 +104,10 @@ There are multiple options available for accessing a Tile Layer Custom Propertie
 If you want to use a custom class for Tile Layers you can inherit from our ``UTiledIntegrationTileLayer`` class and remember to change the default class type in the Plugin Configuration (explained in a section below).
 
 ### Tile Custom Properties
+#### Unreal Engine Variables
+You can define the following Custom Properties in the Tiled Tile within the TileSet which will be used in Unreal Engine when imported:
+* **UserDataName:** Set this to change the User Data Name on a individual Tile  in a Tile Set. (A tag that can be used for grouping and categorizing (consider using it as the index into a UDataTable asset))
+  
 #### Blueprint
 In order to access the Custom Properties of a Tile from blueprint you just need a reference to your Paper Tile Map Actor that is placed in your level and use the method that we provided ``Get Tile Map From Actor``. From there you will need to retrieve the Layer by it's index using ``Get Layer`` and after that use `` can use ``Get Tile Custom Properties`` specifying the X and Y coordinates of the tile you want from that layer.
 
