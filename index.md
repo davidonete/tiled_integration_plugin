@@ -143,6 +143,12 @@ There are multiple options available for accessing a Tile Set Custom Properties:
   
 * Get the Layer from one of the methods explained above and then use the ``GetTileSet`` method  and ``GetCustomProperties`` to access the custom properties.
 
+### Tile Instance Custom Properties
+A tile instance is a unique tile set in the tile map (not to be confused with the tile in the tilesets). Due to Tiled limitation you will need to place the custom properties of the tile instance within the tile map custom properties as a class with the following naming format ``TileProperties[X,Y,Z]``, where X and Y are the coordinates of the tile within the tile map and Z the layer index (where 0 is the highest tile). If done correctly the properties will be transferred to the UTITileInstance when importing the tile map.
+
+### Class Property Shortcuts
+When you work with custom property classes it can get quite time consuming to get the class and then the property you want from code/blueprint, so I have created a shortcut system where you can access the properties under the classes directly. In order to do that you need to write the property name as the following format ``ClassPropertyName.PropertyName`` where ClassProperty is the name of the class property and sepparated by a dot you can write the names of the properties that are under the class. E.g. Let's assume we have a class called Point which has two integers under it X and Y. In order to directly access X from the Point class we would write the name as ``Point.X`` on the getter method.
+
 ## Collisions
 You can add collisions to specific tiles by using the [Tiled Collision Editor](https://doc.mapeditor.org/en/stable/manual/editing-tilesets/#id2) tool. The supported collision types are Rectangles, Ellipses and Polygons.
 
