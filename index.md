@@ -89,6 +89,10 @@ From C++ the process is very similar. You will need a reference to the Paper Til
 If you want to use a custom class for Tile Maps you can inherit from our ``UTiledIntegrationTileMap`` class and remember to change the default class type in the Plugin Configuration (explained in a section below).
 
 ### Tile Layer Custom Properties
+#### Unreal Engine Variables
+You can define the following Custom Properties in the Tiled Tile within the Tile Layer which will be used in Unreal Engine when imported:
+* **Elevation:** This will determine how high (closer to the camera) the layer is and will be used by the system to sort it accordingly. If nothing is specified the layer order will be used to sorting.
+
 #### Blueprint
 There are multiple options available for accessing a Tile Layer Custom Properties:
 * Use the ``Get Tile Layer From Actor`` method which requires a reference to the Paper Tile Map Actor placed in your level, and use ``Get Custom Properties`` method and get the property you want by name and type.
