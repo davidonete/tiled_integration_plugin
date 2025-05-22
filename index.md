@@ -213,6 +213,10 @@ Here are the options that you can configure:
 If you find issues with the plugin please open a ticket [here](https://github.com/davidonete/tiled_integration_plugin/issues) with as much details as possible on what happened, how to reproduce and the expected result. We will look into it and reply back as soon as possible.
 
 ## Updates
+### v1.4 (22/05/2025)
+* Fix error calculating bounds on maps with only one layer
+* Add default separation per tile for isometric maps and invert it's value
+
 ### v1.3 (29/04/2025)
 * Add on instanced callbacks and save owner tile map actor when spawned
 * Fix importing standalone tilesets incorrectly flagged as embedded
