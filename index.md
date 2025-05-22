@@ -228,7 +228,7 @@ If you find issues with the plugin please open a ticket [here](https://github.co
 * Add opacity custom property for tile and tile instance and fix crash on invalid tile pointer in tile instance not saving correctly
 * Expose generated files naming conventions
 
-### v1.2 (09/10/2025)
+### v1.2 (09/10/2024)
 * Add support for UE 5.5
 * Fix bounding box not generating correctly
 * Add Elevation custom property to tile layers
