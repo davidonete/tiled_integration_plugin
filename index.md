@@ -125,11 +125,11 @@ You can define the following Custom Properties in the Tiled Tile within the Tile
 * **Opacity:** Set this to change the rendering opacity of a individual Tile in a Tile Set and Tile Map. (The owning Tile Map must use a material that supports opacity, e.g. Translucent Unlit Sprite Material)
   
 #### Blueprint
-In order to access the Custom Properties of a Tile from blueprint you just need a reference to your Paper Tile Map Actor that is placed in your level and use the method that we provided ``Get Tile Map From Actor``. From there you will need to retrieve the Layer by it's index using ``Get Layer`` and after that use `` can use ``Get Tile Custom Properties`` specifying the X and Y coordinates of the tile you want from that layer.
+In order to access the Custom Properties of a Tile from blueprint you just need a reference to your Paper Tile Map Actor that is placed in your level and use the method that we provided ``Get Tile Map From Actor``. From there you will need to retrieve the Layer using ``Get Layer``, and after that use ``Get Tile`` to retrieve the Tile Instance. From there you can retrieve the Tile Set Tile by using ``Get Tile``. Finally you can use ``Get Custom Properties`` to access the custom properties of the Tile Set Tile.
 
-**Note:** The Layer Index is the identifier of the layer in your Tile Map that goes from 0 for the very first layer starting from the top of the list up to the amount of layers - 1.
+**Note:** The Layer Index in the ``Get Layer`` is the identifier of the layer in your Tile Map that goes from 0 for the very first layer starting from the top of the list up to the amount of layers - 1.
 
-**Note:** If the given Tile coordinates don't contain any Tiles or if the Tile doesn't have any Custom Properties ``Get Tile Custom Properties`` will retrun null.
+**Note:** If the given Tile coordinates don't contain any Tiles ``Get Tile`` will retrun null.
 
 ![Tile Custom Properties Blueprint](https://davidonete.github.io/tiled_integration_plugin/assets/images/tiled_integration_plugin/tile_custom_properties_blueprint.jpg)
 
