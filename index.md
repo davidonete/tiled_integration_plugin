@@ -83,12 +83,12 @@ You can define the following Custom Properties in the Tiled Tile Map which will 
 * **SeparationPerSubElevation:** Value to determine how separated (in the Z axis) are the layers based of the SubElevation custom property.
 
 #### Blueprint
-In order to access the Custom Properties of a Tile Map from blueprint you just need a reference to your Paper Tile Map Actor that is placed in your level and use the method that we provided ``Get Tile Map From Actor``. From there you can use ``Get Custom Properties`` method and get the property you want by name and type.
+In order to access the Custom Properties of a Tile Map from blueprint you just need a reference to your Tile Map Actor that is placed in your level and use the method that we provided ``Get Tile Map From Actor``. From there you can use ``Get Custom Properties`` method and get the property you want by name and type.
 
 ![Tile Map Custom Properties Blueprint](https://davidonete.github.io/tiled_integration_plugin/assets/images/tiled_integration_plugin/tile_map_custom_properties_blueprint.jpg)
 
 #### C++
-From C++ the process is very similar. You will need a reference to the Paper Tile Map Actor and call the helper method ``GetTileMapFromActor`` from ``UTITileMapLibrary`` located in ``TITileMap.h`` or you can directly cast from ``UPaperTileMap`` to ``UTITileMap`` and use the ``GetCustomProperties`` method to access the properties. 
+From C++ the process is very similar. You will need a reference to the Tile Map Actor and call the helper method ``GetTileMapFromActor`` from ``UTITileMapLibrary`` located in ``TITileMap.h`` or you can directly cast from ``UPaperTileMap`` to ``UTITileMap`` and use the ``GetCustomProperties`` method to access the properties. 
 
 If you want to use a custom class for Tile Maps you can inherit from our ``UTITileMap`` class and remember to change the default class type in the Plugin Configuration (explained in a section below).
 
@@ -101,7 +101,7 @@ You can define the following Custom Properties in the Tiled Tile within the Tile
 
 #### Blueprint
 There are multiple options available for accessing a Tile Layer Custom Properties:
-* Use the ``Get Tile Layer From Actor`` method which requires a reference to the Paper Tile Map Actor placed in your level, and use ``Get Custom Properties`` method and get the property you want by name and type.
+* Use the ``Get Tile Layer From Actor`` method which requires a reference to the Tile Map Actor placed in your level, and use ``Get Custom Properties`` method and get the property you want by name and type.
   
 * Use the ``Get Layer`` or ``Get Layers By Name`` method from the Tiled Integration Tile Map which is returned by the ``Get Tile Map From Actor`` method explained above, and use ``Get Custom Properties`` method and get the property you want by name and type.
 
@@ -125,7 +125,7 @@ You can define the following Custom Properties in the Tiled Tile within the Tile
 * **Opacity:** Set this to change the rendering opacity of a individual Tile in a Tile Set and Tile Map. (The owning Tile Map must use a material that supports opacity, e.g. Translucent Unlit Sprite Material)
   
 #### Blueprint
-In order to access the Custom Properties of a Tile from blueprint you just need a reference to your Paper Tile Map Actor that is placed in your level and use the method that we provided ``Get Tile Map From Actor``. From there you will need to retrieve the Layer using ``Get Layer``, and after that use ``Get Tile`` to retrieve the Tile Instance. From there you can retrieve the Tile Set Tile by using ``Get Tile``. Finally you can use ``Get Custom Properties`` to access the custom properties of the Tile Set Tile.
+In order to access the Custom Properties of a Tile from blueprint you just need a reference to your Tile Map Actor that is placed in your level and use the method that we provided ``Get Tile Map From Actor``. From there you will need to retrieve the Layer using ``Get Layer``, and after that use ``Get Tile`` to retrieve the Tile Instance. From there you can retrieve the Tile Set Tile by using ``Get Tile``. Finally you can use ``Get Custom Properties`` to access the custom properties of the Tile Set Tile.
 
 **Note:** The Layer Index in the ``Get Layer`` is the identifier of the layer in your Tile Map that goes from 0 for the very first layer starting from the top of the list up to the amount of layers - 1.
 
@@ -138,10 +138,7 @@ For accessing a Tile Custom Properties get the Layer from one of the methods exp
 
 ### Tile Set Custom Properties
 #### Blueprint
-There are multiple options available for accessing a Tile Layer Custom Properties:
-* Use the ``Get Tile Set From Actor`` method which requires a reference to the Paper Tile Map Actor placed in your level, the X and Y coordinates of the Tile and the Layer Index. Then use ``Get Custom Properties`` method and get the property you want by name and type.
-  
-* Use the ``Get Tile Set`` method from the Tiled Integration Tile Map which is returned by the ``Get Tile Map From Actor`` method explained above, and use ``Get Custom Properties`` method and get the property you want by name and type.
+In order to access the Custom Properties of a Tile Set from blueprint you just need a reference to your Tile Map Actor that is placed in your level and use the method that we provided ``Get Tile Map From Actor``. From there you will need to retrieve the Layer using ``Get Layer``, and after that use ``Get Tile`` to retrieve the Tile Instance. From there you can retrieve the Tile Set by using ``Get Tile Set``. Finally you can use ``Get Custom Properties`` to access the custom properties of the Tile Set.
 
 **Note:** The Layer Index is the identifier of the layer in your Tile Map that goes from 0 for the very first layer starting from the top of the list up to the amount of layers - 1.
 
