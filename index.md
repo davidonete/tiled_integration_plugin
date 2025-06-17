@@ -231,3 +231,5 @@ If you find issues with the plugin please open a ticket [here](https://github.co
 * Add Elevation custom property to tile layers
 * Move plugin settings to project settings
 * Fix material being overriden when reimporting
+
+[Test](./tilemap)
