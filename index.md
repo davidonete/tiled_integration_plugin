@@ -232,4 +232,4 @@ If you find issues with the plugin please open a ticket [here](https://github.co
 * Move plugin settings to project settings
 * Fix material being overriden when reimporting
 
-[Test](./tilemap.html)
+[Test](./tilemap)
