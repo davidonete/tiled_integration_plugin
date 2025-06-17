@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Home](./) / Plugin Settings
+[Home](../) / Plugin Settings
 
 ## Plugin Settings
 
