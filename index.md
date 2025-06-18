@@ -16,6 +16,8 @@ layout: default
   - [Import a Tile Set](./tilesets/import.html)
   - [Custom Properties](./tilesets/custom-properties.html)
   - [Functions](./tilesets/functions.html)
+- [Tile Layers](./layers/index.html)
+- [Tiles](./tiles/index.html)
 - [Plugin Settings](./settings/index.md)
 
 ## Description
