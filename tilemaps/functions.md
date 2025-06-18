@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Home](./) / [Tile Maps](./tilemaps/index.html) / Functions
+[Home](../) / [Tile Maps](./index.html) / Functions
 
 ## Functions
 Work in progress

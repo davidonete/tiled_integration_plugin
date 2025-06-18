@@ -10,7 +10,7 @@ layout: default
 
 **1.-** Get the plugin from the [Unreal Engine Marketplace](https://www.unrealengine.com/marketplace/en-US/product/7cde7c5f731743888f4068c8e8c24f6a) and install it into your Unreal Engine version via the Epic Games Launcher.
 
-**2.-** Create a new project or open an existing one and activate the plugin in Edit > Plugins > TiledIntegration. You will have to restart Unreal Engine afterwards.
+**2.-** Create a new project or open an existing one and activate the plugin in `Edit > Plugins > TiledIntegration`. You will have to restart Unreal Engine afterwards.
 
 ![Activate plugin](https://davidonete.github.io/tiled_integration_plugin/assets/images/tiled_integration_plugin/activate_plugin.jpg)
 
@@ -22,23 +22,13 @@ layout: default
 
 ![Control Panel](https://davidonete.github.io/tiled_integration_plugin/assets/images/tiled_integration_plugin/control_panel.jpg)
 
-**5.-** To get started simply click on the Import button at the bottom and look for a Tiled Tile Map or Tile Set file to import.
-   
-**Note:** The file to be imported must be saved as a JSON file in Tiled.
+**5.-** To get started simply click on the Import button at the bottom and look for a Tiled Tile Map or Tile Set file to import. 
 
-**Note:** When importing a Tile Map and Tile Sets it will also import it's dependencies (Tile Set and/or Textures)
+For more details on how to import Tiled files, refer to the following guides:
+  - [Import a Tile Map](./tilemaps/import.html)
+  - [Import a Tile Set](./tilesets/import.html)
 
-**Note:** The plugin comes with some example files that you can try located in "\<Unreal Engine Installation Folder\>/Engine/Plugins/Marketplace/TiledIntegration/ExampleTiledFiles" (e.g. "C:\Program Files\Epic Games\UE_5.4\Engine\Plugins\Marketplace\TiledIntegration\Content\ExampleTiledFiles")
-
-![Pick asset](https://davidonete.github.io/tiled_integration_plugin/assets/images/tiled_integration_plugin/pick_asset.jpg)
-
-**6.-** After picking the file to import you will be requested to specify the place where you want the asset to be imported to and which name you want to set. Please pick a location that is within your project content folder. You can see on the title of the window what kind of asset you want to save.
-
-**Note:** Please pick a definitive name and location as **MOVING** or **RENAMING** the asset after it has been imported is not supported and you will need to start the process again if so.
-
-![Pick asset](https://davidonete.github.io/tiled_integration_plugin/assets/images/tiled_integration_plugin/save_asset.jpg)
-
-**7.-** If everything went well, you should see your imported assets in the place where you specified it as well as a new dropdown option on the Control Panel from where you can manage your imported assets. From this menu you will be able to do the following:
+**6.-** If everything went well, you should see your imported assets in the place where you specified it as well as a new dropdown option on the Control Panel from where you can manage your imported assets. From this menu you will be able to do the following:
    - **Status:** Check if the asset or the file has any issues.
    - **Asset Location:** See and navigate to the location of the Unreal Engine Asset.
    - **Source Location:** See and navigate to the location of the Tiled Asset.
@@ -51,144 +41,4 @@ layout: default
 
 ![Pick asset](https://davidonete.github.io/tiled_integration_plugin/assets/images/tiled_integration_plugin/imported_assets.jpg)
 
-## Custom Properties
-In order to support Tiled Custom Properties on Tile Maps, Tile Sets, Tiles and Layers, we have extended the default Paper2D classes to support this. We will explain how to access this classes from Blueprints and from C++ in the following sections.
-
-### Tile Map Custom Properties
-#### Unreal Engine Variables
-You can define the following Custom Properties in the Tiled Tile Map which will be used in Unreal Engine when imported:
-* **PixelsPerUnrealUnit:** Set this to change the Pixels Per Unreal Unit setting on the Tile Map. (The scaling factor between pixels and Unreal units (cm) (e.g., 0.64 would make a 64 pixel wide tile take up 100 cm))
-  
-* **SeparationPerLayer:** Set this to change the Separation Per Layer setting on the Tile Map. (The Z-separation between each layer of the tile map)
-
-* **SeparationPerTileX:** Set this to change the Separation Per Tile X setting on the Tile Map. (The Z-separation incurred as you travel in X)
-
-* **SeparationPerTileY:** Set this to change the Separation Per Tile Y setting on the Tile Map. (The Z-separation incurred as you travel in Y)
-
-* **SeparationPerElevation:** Value to determine how separated (in the Z axis) are the layers based of the Elevation custom property.
-
-* **SeparationPerSubElevation:** Value to determine how separated (in the Z axis) are the layers based of the SubElevation custom property.
-
-#### Blueprint
-In order to access the Custom Properties of a Tile Map from blueprint you just need a reference to your Tile Map Actor that is placed in your level and use the method that we provided ``Get Tile Map From Actor``. From there you can use ``Get Custom Properties`` method and get the property you want by name and type.
-
-![Tile Map Custom Properties Blueprint](https://davidonete.github.io/tiled_integration_plugin/assets/images/tiled_integration_plugin/tile_map_custom_properties_blueprint.jpg)
-
-#### C++
-From C++ the process is very similar. You will need a reference to the Tile Map Actor and call the helper method ``GetTileMapFromActor`` from ``UTITileMapLibrary`` located in ``TITileMap.h`` or you can directly cast from ``UPaperTileMap`` to ``UTITileMap`` and use the ``GetCustomProperties`` method to access the properties. 
-
-If you want to use a custom class for Tile Maps you can inherit from our ``UTITileMap`` class and remember to change the default class type in the Plugin Configuration (explained in a section below).
-
-### Tile Layer Custom Properties
-#### Unreal Engine Variables
-You can define the following Custom Properties in the Tiled Tile within the Tile Layer which will be used in Unreal Engine when imported:
-* **Elevation:** This will determine how high (closer to the camera) the layer is and will be used by the system to sort it accordingly. If nothing is specified, the layer order will be used for sorting.
-
-* **SubElevation:** This is the space between layers in the same elevation. Will be used to determine the sort order between layers within the same elevation. If nothing is specified, the layer order will be used for sorting.
-
-#### Blueprint
-There are multiple options available for accessing a Tile Layer Custom Properties:
-* Use the ``Get Tile Layer From Actor`` method which requires a reference to the Tile Map Actor placed in your level, and use ``Get Custom Properties`` method and get the property you want by name and type.
-  
-* Use the ``Get Layer`` or ``Get Layers By Name`` method from the Tiled Integration Tile Map which is returned by the ``Get Tile Map From Actor`` method explained above, and use ``Get Custom Properties`` method and get the property you want by name and type.
-
-**Note:** The Layer Index is the identifier of the layer in your Tile Map that goes from 0 for the very first layer starting from the top of the list up to the amount of layers - 1.
-
-![Tile Layer Custom Properties Blueprint](https://davidonete.github.io/tiled_integration_plugin/assets/images/tiled_integration_plugin/tile_layer_custom_properties_blueprint.jpg)
-
-#### C++
-There are multiple options available for accessing a Tile Layer Custom Properties:
-* Use the helper method method ``GetTileLayerFromActor`` from ``UTITileMapLibrary`` located in ``TITileMap.h`` and then use the ``GetCustomProperties`` method to access the custom properties.
-  
-* Use the ``GetLayer`` or ``GetLayerByName`` method in ``UTITileMap`` and then use the ``GetCustomProperties`` method to access the custom properties.
-
-If you want to use a custom class for Tile Layers you can inherit from our ``UTITileLayer`` class and remember to change the default class type in the Plugin Configuration (explained in a section below).
-
-### Tile Custom Properties
-#### Unreal Engine Variables
-You can define the following Custom Properties in the Tiled Tile within the TileSet which will be used in Unreal Engine when imported:
-* **UserDataName:** Set this to change the User Data Name on a individual Tile in a Tile Set. (A tag that can be used for grouping and categorizing (consider using it as the index into a UDataTable asset))
-
-* **Opacity:** Set this to change the rendering opacity of a individual Tile in a Tile Set and Tile Map. (The owning Tile Map must use a material that supports opacity, e.g. Translucent Unlit Sprite Material)
-  
-#### Blueprint
-In order to access the Custom Properties of a Tile from blueprint you just need a reference to your Tile Map Actor that is placed in your level and use the method that we provided ``Get Tile Map From Actor``. From there you will need to retrieve the Layer using ``Get Layer``, and after that use ``Get Tile`` to retrieve the Tile Instance. From there you can retrieve the Tile Set Tile by using ``Get Tile``. Finally you can use ``Get Custom Properties`` to access the custom properties of the Tile Set Tile.
-
-**Note:** The Layer Index in the ``Get Layer`` is the identifier of the layer in your Tile Map that goes from 0 for the very first layer starting from the top of the list up to the amount of layers - 1.
-
-**Note:** If the given Tile coordinates don't contain any Tiles ``Get Tile`` will retrun null.
-
-![Tile Custom Properties Blueprint](https://davidonete.github.io/tiled_integration_plugin/assets/images/tiled_integration_plugin/tile_custom_properties_blueprint.jpg)
-
-#### C++
-For accessing a Tile Custom Properties get the Layer from one of the methods explained above and then use the ``GetTileCustomProperties`` method to access the custom properties.
-
-### Tile Set Custom Properties
-#### Blueprint
-In order to access the Custom Properties of a Tile Set from blueprint you just need a reference to your Tile Map Actor that is placed in your level and use the method that we provided ``Get Tile Map From Actor``. From there you will need to retrieve the Layer using ``Get Layer``, and after that use ``Get Tile`` to retrieve the Tile Instance. From there you can retrieve the Tile Set by using ``Get Tile Set``. Finally you can use ``Get Custom Properties`` to access the custom properties of the Tile Set.
-
-**Note:** The Layer Index is the identifier of the layer in your Tile Map that goes from 0 for the very first layer starting from the top of the list up to the amount of layers - 1.
-
-**Note:** If the given Tile coordinates don't contain any Tiles ``Get Tile Set`` will retrun null.
-
-![Tile Set Custom Properties Blueprint](https://davidonete.github.io/tiled_integration_plugin/assets/images/tiled_integration_plugin/tile_set_custom_properties_blueprint.jpg)
-
-#### C++
-There are multiple options available for accessing a Tile Set Custom Properties:
-* Use the helper method method ``GetTileSetFromActor`` from ``UTITileMapLibrary`` located in ``TITileMap.h`` and then use ``GetCustomProperties`` to access the custom properties.
-  
-* Use the ``GetTileSet`` method in ``UTITileMap`` and then use ``GetCustomProperties`` to access the custom properties.
-  
-* Get the Layer from one of the methods explained above and then use the ``GetTileSet`` method  and ``GetCustomProperties`` to access the custom properties.
-
-### Tile Instance Custom Properties
-A tile instance is a unique tile in the tile map (not to be confused with the tile in the tilesets). Due to Tiled limitation you will need to place the custom properties of the tile instance within the tile map custom properties as a class with the following naming format ``TileProperties[X,Y,Z]``, where X and Y are the coordinates of the tile within the tile map and Z the layer index (where 0 is the highest layer). If done correctly the properties will be transferred to the UTITileInstance when importing the tile map.
-
-### Class Property Shortcuts
-When you work with custom property classes it can get quite time consuming to get the class and then the property you want from code/blueprint, so I have created a shortcut system where you can access the properties under the classes directly. In order to do that you need to write the property name as the following format ``ClassPropertyName.PropertyName`` where ClassProperty is the name of the class property and sepparated by a dot you can write the names of the properties that are under the class. 
-
-E.g. Let's assume we have a class called Point which has two integers under it X and Y. In order to directly access X from the Point class we would write the name as ``Point.X`` on the getter method.
-
-## Collisions
-You can add collisions to specific tiles by using the [Tiled Collision Editor](https://doc.mapeditor.org/en/stable/manual/editing-tilesets/#id2) tool. The supported collision types are Rectangles, Ellipses and Polygons.
-
-**Note:** Rotations are not supported at the moment.
-
-**Note:** Ellipses must be in the shape of circles (same width and height).
-
-## Opacity
-You can modify the opacity of any tiles at any given point that will modify the transparency of it. It can be set through the Tile Instance > Set Opacity method at runtime, or via the Tile Custom Properties in Tiled at import time. The value expected is a float value between 0 and 1, being 0 fully transparent and 1 fully visible.
-
-## Animated Tiles
-You can add animated tiles to your Tile Set and Tile Map by using the [Tiled Animation Editor](https://doc.mapeditor.org/en/stable/manual/editing-tilesets/#id3) tool and placing the animated tile into your Tile Map.
-
-**Note:** Placing many animated tiles in very big Tile Maps can become costly quite quickly. It is recommended that you keep the tile maps as small as possible (ideally combine small tile maps together to make a big one and show/hide them when needed)
-
-## Plugin Configuration
-You can configure some aspects of the plugin to adjust it better to your needs. The configuration can be found in Edit > Project Settings > Plugins > Tiled Integration.
-Here are the options that you can configure:
-* **Save File Path:** Where the plugin save file will be located relative to your project directory. By default it will be located in the root folder of your project. **Note:** If you change the location in the settings you must also manually change the file location accordingly and restart the engine.
-  
-* **Tile Map Class:** The C++ class that will be used when importing a Tile Map asset. If you want to use your own class it must inherit from ``UTITileMap``. **Note:** Changing this after importing assets is not supported, please remove all imported assets before changing it and reimport them afterwards.
-
-* **Tile Map Actor Class:** The C++ class that will be used when instancing a Tile Map asset into a level. If you want to use your own class it must inherit from ``UTITileMapActor``. **Note:** Changing this after importing assets is not supported, please remove all imported assets before changing it and reimport them afterwards.
-  
-* **Tile Set Class:** The C++ class that will be used when importing a Tile Set asset. If you want to use your own class it must inherit from ``UTITileSet``. **Note:** Changing this after importing assets is not supported, please remove all imported assets before changing it and reimport them afterwards.
-  
-* **Tile Layer Class:** The C++ class that will be used when importing a Tile Layer from a Tile Map asset. If you want to use your own class it must inherit from ``UTITileLayer``. **Note:** Changing this after importing assets is not supported, please remove all imported assets before changing it and reimport them afterwards.
-  
-* **Tile Instance Class:** The C++ class that will be used to represent a single tile instance within a Tile Map. If you want to use your own class it must inherit from ``UTITileInstance``. **Note:** Changing this after importing assets is not supported, please remove all imported assets before changing it and reimport them afterwards.
-
-* **Tile Class:** The C++ class that will be used to represent a tile within a Tile Set. If you want to use your own class it must inherit from ``UTITile``. **Note:** Changing this after importing assets is not supported, please remove all imported assets before changing it and reimport them afterwards.
-
-* **Tile Map Naming Convention:** The naming convention of the Tile Map assets generated when importing, where {0} is the name of the original Tile Map file.
-
-* **Tile Set Naming Convention:** The naming convention of the Tile Set assets generated when importing, where {0} is the name of the original Tile Set file.
-
-* **Tile Set Texture Naming Convention:** The naming convention of the Tile Set Textures assets generated when importing, where {0} is the name of the original Texture file.
-
-* **Tile Set Flipbook Naming Convention:** The naming convention of the Tile Set Flipbooks assets generated when importing, where {0} is the name of the Tile Set file and {1} is the ID of the Tile.
-
-* **Tile Set Sprite Naming Convention:** The naming convention of the Tile Set Sprites assets generated when importing, where {0} is the name of the Tile Set file and {1} is the ID of the Tile.
-
-![Plugin Settings](https://davidonete.github.io/tiled_integration_plugin/assets/images/tiled_integration_plugin/plugin_settings.jpg)
+**7.-** If you want to quickly find a specific imported assets you can use the filter tool next to the dropdown which will let you filter by the name of the asset.

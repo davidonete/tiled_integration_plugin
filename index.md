@@ -2,10 +2,11 @@
 layout: default
 ---
 
-[Home](./) /
-
 ## Table of Contents
-- [Description](./)
+- [Home](./)
+  - [Description](./)
+  - [Get in touch](./)
+  - [Updates](./)
 - [Getting Started](./getting-started.html)
 - [Tile Maps](./tilemaps/index.html)
   - [Import a Tile Map](./tilemaps/import.html)
@@ -16,11 +17,9 @@ layout: default
   - [Custom Properties](./tilesets/custom-properties.html)
   - [Functions](./tilesets/functions.html)
 - [Plugin Settings](./settings/index.md)
-- [Updates](./)
-- [Get in touch](./)
 
 ## Description
-This is a plugin for Unreal Engine 5 that simplifies the work of importing Tile Maps and Tile Sets made with [Tiled](https://www.mapeditor.org/). In addition it adds some quality time improvements and fixes from the default importer that came with Unreal Engine by default. 
+This is a plugin for Unreal Engine 5 that simplifies the work of importing Tile Maps and Tile Sets made with [Tiled](https://www.mapeditor.org/). In addition it adds some quality time improvements and fixes to the original system. 
 
 This is the complete list of features currently available:
 * Import Tiled Tile Maps
@@ -30,10 +29,12 @@ This is the complete list of features currently available:
 * Support for setting up Collisions from Tiled
 * Support for Animated Tiles
 
-**Note:** This tool expects the user to use Tiled as the main Tile Map and Tile Set editor, doing changes such as modifying tiles, layers, collisions and/or dimensions directly into Unreal Engine is not supported and can lead to issues.
+**Note:** This tool expects the user to use Tiled as the main Tile Map and Tile Set editor, completely replacing the Unreal Engine Tilemap and Tileset editor. Doing changes such as modifying tiles, layers, collisions and/or dimensions directly into Unreal Engine is not supported and can lead to issues.
 
-## Contact
+## Get in touch
 If you find issues with the plugin please open a ticket [here](https://github.com/davidonete/tiled_integration_plugin/issues) with as much details as possible on what happened, how to reproduce and the expected result. We will look into it and reply back as soon as possible.
+
+Alternatively you can join our discord channel where you can report issues or request features, as well as ask for help or advice on related topics. You can join [here](https://discord.gg/C4eEcVgfmb)
 
 ## Updates
 ### v1.5 (17/06/2025)
