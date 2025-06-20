@@ -5,6 +5,7 @@ layout: default
 [Home](./) / Getting Started
 
 ## Getting Started
+This is a quick guide of how to install and use the plugin.
 
 [Quick Video Guide](https://www.youtube.com/watch?v=AQnpu9husAo)
 
