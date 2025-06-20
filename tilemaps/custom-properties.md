@@ -54,7 +54,7 @@ Here is the list of custom properties that you can set up on your Tile Map:
 
 - **SeparationPerSubElevation:** Value to determine how separated (in the Z axis) are the layers based of the SubElevation custom property.
 
-You can download a predefined set of Custom Properties which includes all the above properties following this guide:
+A predefined set of Custom Properties is available to download and apply to your Tiled project, which includes all the above properties. You can set it up by following this guide:
 
 **1.-** Download the predefined custom properties from [here](https://davidonete.github.io/tiled_integration_plugin/assets/other/tiled-custom-properties.json)
 

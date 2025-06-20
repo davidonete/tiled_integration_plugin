@@ -36,7 +36,7 @@ This is the complete list of features currently available:
 ## Get in touch
 If you find issues with the plugin please open a ticket [here](https://github.com/davidonete/tiled_integration_plugin/issues) with as much details as possible on what happened, how to reproduce and the expected result. We will look into it and reply back as soon as possible.
 
-Alternatively you can join our discord channel where you can report issues or request features, as well as ask for help or advice on related topics. You can join [here](https://discord.gg/C4eEcVgfmb)
+Alternatively you can join our [discord channel](https://discord.gg/C4eEcVgfmb) where you can report issues or request features, as well as ask for help or advice on related topics.
 
 ## Updates
 ### v1.5 (17/06/2025)
