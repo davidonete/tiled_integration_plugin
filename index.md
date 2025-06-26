@@ -11,22 +11,23 @@ layout: default
 3. [Tile Maps](./tilemaps/index.md)
   - [Import a Tile Map](./tilemaps/import.html)
   - [Custom Properties](./tilemaps/custom-properties.html)
-  - Classes
-	  - [UTITileMap](./tilemaps/utitilemap.html)
-	  - [UTITileMapInstance](./tilemaps/utitilemapinstance.html)
+  - <dl><dt>Classes</dt>
+	<dd>- [UTITileMap](./tilemaps/utitilemap.html)</dd>
+	<dd>- [UTITileMapInstance](./tilemaps/utitilemapinstance.html)</dd>
+	</dl>
 4. [Tile Sets](./tilesets/index.md)
   - [Import a Tile Set](./tilesets/import.html)
   - [Custom Properties](./tilesets/custom-properties.html)
   - [Functions](./tilesets/functions.html)
 5. [Tile Layers](./layers/index.md)
   - Classes
-	  - [UTITileLayer](./layers/utitilelayer.html)
-	  - [UTITileLayerInstance](./layers/utitilelayerinstance.html)	
+	- [UTITileLayer](./layers/utitilelayer.html)
+	- [UTITileLayerInstance](./layers/utitilelayerinstance.html)	
 6. [Tiles](./tiles/index.md)
   - Classes
-	  - [UTITileMapTile](./tiles/utitilemaptile.html)
-	  - [UTITileMapTileInstance](./tiles/utitilemaptileinstance.html)	
-	  - [UTITileSetTile](./tiles/utitilesettile.html)
+	- [UTITileMapTile](./tiles/utitilemaptile.html)
+	- [UTITileMapTileInstance](./tiles/utitilemaptileinstance.html)	
+	- [UTITileSetTile](./tiles/utitilesettile.html)
 7. [Tile Map Component](./component/index.md)
 8. [Tile Map Actor](./actor/index.md)
 9. [Custom Properties](./custom-properties/index.md)
