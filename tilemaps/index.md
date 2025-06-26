@@ -7,11 +7,11 @@ layout: default
 # Tile Maps
 
 ## Table of Contents
-1. [Import a Tile Map](./import.html)
-2. [Custom Properties](./custom-properties.html)
-3. Classes
-  3.1. [UTITileMap](./utitilemap.html)
-  3.2. [UTITileMapInstance](./utitilemapinstance.html)
+- [Import a Tile Map](./import.html)
+- [Custom Properties](./custom-properties.html)
+- Classes
+  - [UTITileMap](./utitilemap.html)
+  - [UTITileMapInstance](./utitilemapinstance.html)
 
 ## Description
 A Tile Map is a visual representation of a group of [Tiles](../tiles/index.md) organized within [Tile Layers](../layers/index.md). To create and modify a tile map, you will need to use the [Tiled Map Editor](https://www.mapeditor.org/) and afterwards [Import a Tile Map](./import.html) to Unreal Engine in order to be able to use it in your project.
