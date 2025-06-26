@@ -3,34 +3,34 @@ layout: default
 ---
 
 ## Table of Contents
-- [Home](./)
-  - [Description](./)
-  - [Get in touch](./)
-  - [Updates](./)
-- [Getting Started](./getting-started.html)
-- [Tile Maps](./tilemaps/index.md)
-  - [Import a Tile Map](./tilemaps/import.html)
-  - [Custom Properties](./tilemaps/custom-properties.html)
-  - Classes
-	- [UTITileMap](./tilemaps/utitilemap.html)
-	- [UTITileMapInstance](./tilemaps/utitilemapinstance.html)
-- [Tile Sets](./tilesets/index.md)
-  - [Import a Tile Set](./tilesets/import.html)
-  - [Custom Properties](./tilesets/custom-properties.html)
-  - [Functions](./tilesets/functions.html)
-- [Tile Layers](./layers/index.md)
-  - Classes
-	- [UTITileLayer](./layers/utitilelayer.html)
-	- [UTITileLayerInstance](./layers/utitilelayerinstance.html)	
-- [Tiles](./tiles/index.md)
-  - Classes
-	- [UTITileMapTile](./tiles/utitilemaptile.html)
-	- [UTITileMapTileInstance](./tiles/utitilemaptileinstance.html)	
-	- [UTITileSetTile](./tiles/utitilesettile.html)
-- [Tile Map Component](./component/index.md)
-- [Tile Map Actor](./actor/index.md)
-- [Custom Properties](./custom-properties/index.md)
-- [Plugin Settings](./settings/index.md)
+- **[Home](./)**
+  - **[Description](./)**
+  - **[Get in touch](./)**
+  - **[Updates](./)**
+- **[Getting Started](./getting-started.html)**
+- **[Tile Maps](./tilemaps/index.md)**
+  - **[Import a Tile Map](./tilemaps/import.html)**
+  - **[Custom Properties](./tilemaps/custom-properties.html)**
+  - **Classes**
+	- **[UTITileMap](./tilemaps/utitilemap.html)**
+	- **[UTITileMapInstance](./tilemaps/utitilemapinstance.html)**
+- **[Tile Sets](./tilesets/index.md)**
+  - **[Import a Tile Set](./tilesets/import.html)**
+  - **[Custom Properties](./tilesets/custom-properties.html)**
+  - **[Functions](./tilesets/functions.html)**
+- **[Tile Layers](./layers/index.md)**
+  - **Classes**
+	- **[UTITileLayer](./layers/utitilelayer.html)**
+	- **[UTITileLayerInstance](./layers/utitilelayerinstance.html)**	
+- **[Tiles](./tiles/index.md)**
+  - **Classes**
+	- **[UTITileMapTile](./tiles/utitilemaptile.html)**
+	- **[UTITileMapTileInstance](./tiles/utitilemaptileinstance.html)**	
+	- **[UTITileSetTile](./tiles/utitilesettile.html)**
+- **[Tile Map Component](./component/index.md)**
+- **[Tile Map Actor](./actor/index.md)**
+- **[Custom Properties](./custom-properties/index.md)**
+- **[Plugin Settings](./settings/index.md)**
 
 ## Description
 This is a plugin for Unreal Engine 5 that simplifies the work of importing Tile Maps and Tile Sets made with [Tiled](https://www.mapeditor.org/). In addition it adds some quality time improvements and fixes to the original system. 
