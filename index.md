@@ -11,13 +11,25 @@ layout: default
 - [Tile Maps](./tilemaps/index.html)
   - [Import a Tile Map](./tilemaps/import.html)
   - [Custom Properties](./tilemaps/custom-properties.html)
-  - [Functions](./tilemaps/functions.html)
+  - Classes
+	- [UTITileMap](./tilemaps/utitilemap.html)
+	- [UTITileMapInstance](./tilemaps/utitilemapinstance.html)
 - [Tile Sets](./tilesets/index.html)
   - [Import a Tile Set](./tilesets/import.html)
   - [Custom Properties](./tilesets/custom-properties.html)
   - [Functions](./tilesets/functions.html)
 - [Tile Layers](./layers/index.html)
+  - Classes
+	- [UTITileLayer](./layers/utitilelayer.html)
+	- [UTITileLayerInstance](./layers/utitilelayerinstance.html)	
 - [Tiles](./tiles/index.html)
+  - Classes
+	- [UTITileMapTile](./tiles/utitilemaptile.html)
+	- [UTITileMapTileInstance](./tiles/utitilemaptileinstance.html)	
+	- [UTITileSetTile](./tiles/utitilesettile.html)
+- [Tile Map Component](./component/index.html)
+- [Tile Map Actor](./actor/index.html)
+- [Custom Properties](./custom-properties/index.html)
 - [Plugin Settings](./settings/index.md)
 
 ## Description
