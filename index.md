@@ -3,13 +3,13 @@ layout: default
 ---
 
 ## Table of Contents
-1. **[Home](./)**
+1.- **[Home](./)**
 
-  1.1. **[Description](./)**
+    1.1.- **[Description](./)**
   
-  1.2. **[Get in touch](./)**
+    1.2.- **[Get in touch](./)**
   
-  1.3. **[Updates](./)**
+    1.3.- **[Updates](./)**
   
 2. **[Getting Started](./getting-started.html)**
 
