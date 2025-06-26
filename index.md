@@ -3,34 +3,61 @@ layout: default
 ---
 
 ## Table of Contents
-1. [Home](./)
-  1.1. [Description](./)
-  1.2. [Get in touch](./)
-  1.3. [Updates](./)
-2. [Getting Started](./getting-started.html)
-3. [Tile Maps](./tilemaps/index.md)
-  3.1. [Import a Tile Map](./tilemaps/import.html)
-  3.2. [Custom Properties](./tilemaps/custom-properties.html)
-  3.3. Classes
-	3.3.1. [UTITileMap](./tilemaps/utitilemap.html)
-	3.3.2. [UTITileMapInstance](./tilemaps/utitilemapinstance.html)
-4. [Tile Sets](./tilesets/index.md)
-  4.1. [Import a Tile Set](./tilesets/import.html)
-  4.2. [Custom Properties](./tilesets/custom-properties.html)
-  4.3. [Functions](./tilesets/functions.html)
-5. [Tile Layers](./layers/index.md)
-  5.1. Classes
-	5.1.1. [UTITileLayer](./layers/utitilelayer.html)
-	5.1.2. [UTITileLayerInstance](./layers/utitilelayerinstance.html)	
-6. [Tiles](./tiles/index.md)
-  6.1. Classes
-	6.1.1. [UTITileMapTile](./tiles/utitilemaptile.html)
-	6.1.2. [UTITileMapTileInstance](./tiles/utitilemaptileinstance.html)	
-	6.1.3. [UTITileSetTile](./tiles/utitilesettile.html)
-7. [Tile Map Component](./component/index.md)
-8. [Tile Map Actor](./actor/index.md)
-9. [Custom Properties](./custom-properties/index.md)
-10. [Plugin Settings](./settings/index.md)
+1. **[Home](./)**
+
+  1.1. **[Description](./)**
+  
+  1.2. **[Get in touch](./)**
+  
+  1.3. **[Updates](./)**
+  
+2. **[Getting Started](./getting-started.html)**
+
+3. **[Tile Maps](./tilemaps/index.md)**
+
+  3.1. **[Import a Tile Map](./tilemaps/import.html)**
+  
+  3.2. **[Custom Properties](./tilemaps/custom-properties.html)**
+  
+  3.3. **Classes**
+  
+	3.3.1. **[UTITileMap](./tilemaps/utitilemap.html)**
+	
+	3.3.2. **[UTITileMapInstance](./tilemaps/utitilemapinstance.html)**
+	
+4. **[Tile Sets](./tilesets/index.md)**
+
+  4.1. **[Import a Tile Set](./tilesets/import.html)**
+  
+  4.2. **[Custom Properties](./tilesets/custom-properties.html)**
+  
+  4.3. **[Functions](./tilesets/functions.html)**
+  
+5. **[Tile Layers](./layers/index.md)**
+
+  5.1. **Classes**
+  
+	5.1.1. **[UTITileLayer](./layers/utitilelayer.html)**
+	
+	5.1.2. **[UTITileLayerInstance](./layers/utitilelayerinstance.html)**
+	
+6. **[Tiles](./tiles/index.md)**
+
+  6.1. **Classes**
+  
+	6.1.1. **[UTITileMapTile](./tiles/utitilemaptile.html)**
+	
+	6.1.2. **[UTITileMapTileInstance](./tiles/utitilemaptileinstance.html)**
+	
+	6.1.3. **[UTITileSetTile](./tiles/utitilesettile.html)**
+	
+7. **[Tile Map Component](./component/index.md)**
+
+8. **[Tile Map Actor](./actor/index.md)**
+
+9. **[Custom Properties](./custom-properties/index.md)**
+
+10. **[Plugin Settings](./settings/index.md)**
 
 ## Description
 This is a plugin for Unreal Engine 5 that simplifies the work of importing Tile Maps and Tile Sets made with [Tiled](https://www.mapeditor.org/). In addition it adds some quality time improvements and fixes to the original system. 
