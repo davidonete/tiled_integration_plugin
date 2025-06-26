@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Home](../) / [Tiles](./index.html) / Classes / UTITileSetTile
+[Home](../) / [Tiles](./index.md) / Classes / UTITileSetTile
 
 ## UTITileSetTile
 Work in progress

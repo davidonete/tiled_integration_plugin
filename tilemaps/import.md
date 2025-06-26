@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Home](../) / [Tile Maps](./index.html) / Import a Tile Map
+[Home](../) / [Tile Maps](./index.md) / Import a Tile Map
 
 ## Import a Tile Map
 On this guide we will go over the steps to importing a tile map from Tiled to Unreal Engine as well as some tips and tricks to make the process easier.

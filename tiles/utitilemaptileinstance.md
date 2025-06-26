@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Home](../) / [Tiles](./index.html) / Classes / UTITileMapTileInstance
+[Home](../) / [Tiles](./index.md) / Classes / UTITileMapTileInstance
 
 ## UTITileMapTileInstance
 Work in progress

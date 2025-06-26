@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Home](../) / [Tile Maps](./index.html) / Custom Properties
+[Home](../) / [Tile Maps](./index.md) / Custom Properties
 
 ## Tile Map Custom Properties
 You can also specify some Unreal Engine properties for the Tile Map from Tiled, which will automatically set it on the imported asset.
