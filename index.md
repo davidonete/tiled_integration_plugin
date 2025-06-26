@@ -3,35 +3,34 @@ layout: default
 ---
 
 ## Table of Contents
-1. [Home](./)
+- [Home](./)
   - [Description](./)
   - [Get in touch](./)
   - [Updates](./)
-2. [Getting Started](./getting-started.html)
-3. [Tile Maps](./tilemaps/index.md)
+- [Getting Started](./getting-started.html)
+- [Tile Maps](./tilemaps/index.md)
   - [Import a Tile Map](./tilemaps/import.html)
   - [Custom Properties](./tilemaps/custom-properties.html)
-  - <dl><dt>Classes</dt>
-	<dd>- [UTITileMap](./tilemaps/utitilemap.html)</dd>
-	<dd>- [UTITileMapInstance](./tilemaps/utitilemapinstance.html)</dd>
-	</dl>
-4. [Tile Sets](./tilesets/index.md)
+  - Classes
+	- [UTITileMap](./tilemaps/utitilemap.html)
+	- [UTITileMapInstance](./tilemaps/utitilemapinstance.html)
+- [Tile Sets](./tilesets/index.md)
   - [Import a Tile Set](./tilesets/import.html)
   - [Custom Properties](./tilesets/custom-properties.html)
   - [Functions](./tilesets/functions.html)
-5. [Tile Layers](./layers/index.md)
+- [Tile Layers](./layers/index.md)
   - Classes
 	- [UTITileLayer](./layers/utitilelayer.html)
 	- [UTITileLayerInstance](./layers/utitilelayerinstance.html)	
-6. [Tiles](./tiles/index.md)
+- [Tiles](./tiles/index.md)
   - Classes
 	- [UTITileMapTile](./tiles/utitilemaptile.html)
 	- [UTITileMapTileInstance](./tiles/utitilemaptileinstance.html)	
 	- [UTITileSetTile](./tiles/utitilesettile.html)
-7. [Tile Map Component](./component/index.md)
-8. [Tile Map Actor](./actor/index.md)
-9. [Custom Properties](./custom-properties/index.md)
-10. [Plugin Settings](./settings/index.md)
+- [Tile Map Component](./component/index.md)
+- [Tile Map Actor](./actor/index.md)
+- [Custom Properties](./custom-properties/index.md)
+- [Plugin Settings](./settings/index.md)
 
 ## Description
 This is a plugin for Unreal Engine 5 that simplifies the work of importing Tile Maps and Tile Sets made with [Tiled](https://www.mapeditor.org/). In addition it adds some quality time improvements and fixes to the original system. 
