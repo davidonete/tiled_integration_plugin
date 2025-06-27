@@ -13,6 +13,21 @@
                 "name": "SubElevation",
                 "type": "int",
                 "value": 0
+            },
+            {
+                "name": "CollisionEnabled",
+                "type": "bool",
+                "value": true
+            },
+			{
+                "name": "CollisionThickness",
+                "type": "float",
+                "value": 50
+            },
+			{
+                "name": "CollisionOffset",
+                "type": "float",
+                "value": 0
             }
         ],
         "name": "Layer",
@@ -40,7 +55,7 @@
             {
                 "name": "SeparationPerLayer",
                 "type": "float",
-                "value": 1
+                "value": 4
             },
             {
                 "name": "SeparationPerSubElevation",
@@ -56,6 +71,11 @@
                 "name": "SeparationPerTileY",
                 "type": "float",
                 "value": 0
+            },
+			{
+                "name": "CollisionThickness",
+                "type": "float",
+                "value": 50
             }
         ],
         "name": "Map",

@@ -51,6 +51,13 @@ If you find issues with the plugin please open a ticket [here](https://github.co
 Alternatively you can join our [discord channel](https://discord.gg/C4eEcVgfmb) where you can report issues or request features, as well as ask for help or advice on related topics.
 
 ## Updates
+### v1.6 (27/06/2025)
+* Upgrade to 5.6
+* Fix player and visibility collision
+* Add checks to prevent crashes when deleting assets
+* Disable editor properties for tile maps, tile layers and tile sets
+* Allow customizing the collision thickness and collision offset on tile maps and tile layers
+
 ### v1.5 (17/06/2025)
 * Add support for changing the tile maps at runtime
 * Allow infinite tile maps
