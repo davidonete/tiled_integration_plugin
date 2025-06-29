@@ -14,21 +14,196 @@ If you want to extend the class either via C++ or Blueprint, you can specify in 
  
 **Note:** Setting a new class override to be used by the plugin won't be applied to previously imported assets, you will have to delete and import the already existing assets after the settings have been changed.
 
-**Blueprint:** &#9989;
-
-**C++:** &#10060;
-
 ## Functions
 ### GetCustomProperties
-Returns the [Custom Properties](../custom-properties/index.md) of the Tile Map, where you can access all the individual properties stored for the Tile Map.
+Gets the [Custom Properties](../custom-properties/index.md) of the Tile Map, where you can access all the individual properties stored for the Tile Map.
 
-**Blueprint:** &#9989;
+**Return**
 
-**C++:** &#9989;
+- **UTICustomProperties*:** The [Custom Properties](../custom-properties/index.md) of the Tile Map.
+
+**C++:** &#9989; **Blueprint:** &#9989;
 
 ### GetTile
-Returns the [Tile Map Tile](../tiles/utitilemaptile.md) stored in the specified coordinates, where `X` and `Y` are the coordinates within the [Tile Layer](../layers/utitilelayer.html) and `Z` is the layer index (from highest to lowest).
+Tries to get the [Tile Map Tile](../tiles/utitilemaptile.html) stored in the specified coordinates.
 
-**Blueprint:** &#9989;
+**Arguments**
 
-**C++:** &#9989;
+- **X:** The horizontal coordinate within the [Tile Layer](../layers/utitilelayer.html).
+- **Y:** The vertical coordinate within the [Tile Layer](../layers/utitilelayer.html).
+- **Z:** The [Tile Layer](../layers/utitilelayer.html) index (from highest to lowest).
+
+**Return**
+
+- **UTITileMapTile*:** The [Tile Map Tile](../tiles/utitilemaptile.html) if there is a Tile in that coordinate, or null if it doesn't contain any Tiles.
+
+**C++:** &#9989; **Blueprint:** &#9989;
+
+### GetLayer
+Tries to get the [Tile Layer](../layers/utitilelayer.html) in the Tile Map.
+
+**Arguments**
+
+- **LayerIndex:** The layer index (from highest to lowest).
+
+**Return**
+
+- **UTITileLayer*:** The [Tile Layer](../layers/utitilelayer.html) or null if not found.
+
+**C++:** &#9989; **Blueprint:** &#9989;
+
+### FindLayersByName
+Retrieves a list of [Tile Layers](../layers/utitilelayer.html) which names match the one specified in `LayerName`. The search is case sensitive.
+
+**Arguments**
+
+- **LayerName:** The name of the [Tile Layer](../layers/utitilelayer.html) to look for (Case sensitive).
+
+**Return**
+
+- **TArray<UTITileLayer*>:** A list of [Tile Layers](../layers/utitilelayer.html) found.
+
+**C++:** &#9989; **Blueprint:** &#9989;
+
+### GetLayersAmount
+Gets the amount of [Tile Layers](../layers/utitilelayer.html) in this Tile Map.
+
+**Return**
+
+- **int32:** The amount ot [Tile Layers](../layers/utitilelayer.html)
+
+**C++:** &#9989; **Blueprint:** &#9989;
+
+### GetTileWidth
+Gets the width (in pixels) of an individual [Tile](../tiles/index.md). (All tiles in the Tile Map have the same width)
+
+**Return**
+
+- **int32:** The width of an individual [Tile](../tiles/index.md).
+
+**C++:** &#9989; **Blueprint:** &#9989;
+
+### GetTileHeight
+Gets the height in pixels of an individual [Tile](../tiles/index.md). (All tiles in the Tile Map have the same height)
+
+**Return**
+
+- **int32:** The height of an individual [Tile](../tiles/index.md).
+
+**C++:** &#9989; **Blueprint:** &#9989;
+
+### GetMapWidth
+Gets the amount of [Tiles](../tiles/index.md) that can fit horizontally in the Tile Map.
+
+**Return**
+
+- **int32:** The amount of [Tiles](../tiles/index.md) that can fit horizontally.
+
+**C++:** &#9989; **Blueprint:** &#9989;
+
+### GetMapHeight
+Gets the amount of [Tiles](../tiles/index.md) that can fit vertically in the Tile Map.
+
+**Return**
+
+- **int32:** The amount of [Tiles](../tiles/index.md) that can fit vertically.
+
+**C++:** &#9989; **Blueprint:** &#9989;
+
+### GetProjectionMode
+Gets the projection mode of the Tile Map.
+
+**Return**
+
+- **ETileMapProjectionMode::Type:** The projection mode of the Tile Map (Orthogonal, IsometricDiamond, IsometricStaggered or HexagonalStaggered).
+
+**C++:** &#9989; **Blueprint:** &#9989;
+
+### ForEachLayer
+Calls the given callback once per [Tile Layer](../layers/utitilelayer.html)
+
+**Arguments**
+
+- **Callback:** The function/lambda to be called per [Tile Layer](../layers/utitilelayer.html).
+- **Reversed:** Set to true to change the order from last to first (lowest to highest). If false the order will be from first to last (highest to lowest).
+
+**C++:** &#9989; **Blueprint:** &#10060;
+
+### ForEachOccupiedTile
+Calls the given callback once per [Tile Map Tile](../tiles/utitilemaptile.html) stored in the Tile Map.
+
+**Arguments**
+
+- **Callback:** The function/lambda to be called per [Tile Map Tile](../tiles/utitilemaptile.html).
+- **Reversed:** Set to true to change the order from last to first. If false the order will be from first to last.
+
+**C++:** &#9989; **Blueprint:** &#10060;
+
+### ForEachTile
+Calls the given callback once per tile coordinate within the Tile Map. The [Tile Map Tile](../tiles/utitilemaptile.html) returned may be null
+
+**Arguments**
+
+- **Callback:** The function/lambda to be called tile coordinate.
+- **Reversed:** Set to true to change the order from last to first. If false the order will be from first to last.
+
+**C++:** &#9989; **Blueprint:** &#10060;
+
+### GetTilePositionInLocalSpace
+Gets the local position of the given tile coordinates relative to the Tile Map.
+
+**Arguments**
+
+- **X:** The horizontal coordinate within the [Tile Layer](../layers/utitilelayer.html).
+- **Y:** The vertical coordinate within the [Tile Layer](../layers/utitilelayer.html).
+- **Z:** The [Tile Layer](../layers/utitilelayer.html) index (from highest to lowest).
+
+**Return**
+
+- **FVector:** The position of the given tile coordinates in local space.
+
+**C++:** &#9989; **Blueprint:** &#10060;
+
+### GetTileSeparation
+Gets how high the given tile is, used for sorting the tile rendering.
+
+**Arguments**
+
+- **X:** The horizontal coordinate within the [Tile Layer](../layers/utitilelayer.html).
+- **Y:** The vertical coordinate within the [Tile Layer](../layers/utitilelayer.html).
+- **Z:** The [Tile Layer](../layers/utitilelayer.html) index (from highest to lowest).
+
+**Return**
+
+- **float:** The height of the given tile.
+
+**C++:** &#9989; **Blueprint:** &#10060;
+
+### TileCoordinatesToTileIndex
+Converts the given tile coordinates to tile index.
+
+**Arguments**
+
+- **X:** The horizontal coordinate within the [Tile Layer](../layers/utitilelayer.html).
+- **Y:** The vertical coordinate within the [Tile Layer](../layers/utitilelayer.html).
+- **Z:** The [Tile Layer](../layers/utitilelayer.html) index (from highest to lowest).
+
+**Return**
+
+- **int32:** The tile index of the given coordinates.
+
+**C++:** &#9989; **Blueprint:** &#10060;
+
+### TileIndexToTileCoordinates
+Converts the given tile index to tile coordinates.
+
+**Arguments**
+
+- **TileIndex:** The tile index to convert.
+- **Layer:** The layer for the given tile index.
+
+**Return**
+
+- **FIntVector:** The tile coordinates of the given tile index.
+
+**C++:** &#9989; **Blueprint:** &#10060;
