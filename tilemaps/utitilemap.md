@@ -54,7 +54,7 @@ Tries to get the [Tile Layer](../layers/utitilelayer.html) in the Tile Map.
 
 **C++** &#9989; **Blueprint** &#9989;
 
-Retrieves a list of [Tile Layers](../layers/utitilelayer.html) which names match the one specified in `LayerName`. The search is case sensitive.
+Retrieves a list of [Tile Layers](../layers/utitilelayer.html) whose names match the one specified. The search is case sensitive.
 
 **Arguments**
 - **LayerName:** The name of the [Tile Layer](../layers/utitilelayer.html) to look for (Case sensitive).
@@ -140,10 +140,10 @@ Calls the given callback once per [Tile Map Tile](../tiles/utitilemaptile.html) 
 
 **C++** &#9989; **Blueprint** &#10060;
 
-Calls the given callback once per tile coordinate within the Tile Map. The [Tile Map Tile](../tiles/utitilemaptile.html) returned may be null
+Calls the given callback once per tile coordinate within the Tile Map. The [Tile Map Tile](../tiles/utitilemaptile.html) returned may be null.
 
 **Arguments**
-- **Callback:** The function/lambda to be called tile coordinate.
+- **Callback:** The function/lambda to be called per tile coordinate.
 - **Reversed:** Set to true to change the order from last to first. If false the order will be from first to last.
 
 ### GetTilePositionInLocalSpace
@@ -200,3 +200,18 @@ Converts the given tile index to tile coordinates.
 
 **Return**
 - **FIntVector:** The tile coordinates of the given tile index.
+
+### OnCustomPropertiesLoaded
+
+**C++** &#9989; **Blueprint** &#9989;
+
+Called when the Tile Map [Custom Properties](../custom-properties/index.md) have been loaded.
+
+**Arguments**
+- **Properties:** [Custom Properties](../custom-properties/index.md) loaded.
+
+### OnImported
+
+**C++** &#9989; **Blueprint** &#9989;
+
+Called when the Tile Map has been imported by the plugin.
