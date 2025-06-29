@@ -15,7 +15,7 @@ Here are the options that you can configure:
 
 - **Tile Map Instance Class:** The class that will be used when creating a Tile Map asset. If you want to use your own class it must inherit from **[UTITileMapInstance](../tilemaps/utitilemapinstance.html)**. **Note:** Changing this after importing assets is not supported, please remove all imported assets before changing it and reimport them afterwards.
 
-- **Tile Map Actor Class:** The class that will be used when instancing a Tile Map asset into a level. If you want to use your own class it must inherit from **[UTITileMapActor](../tilemaps/utitilemapactor.html)**. **Note:** Changing this after importing assets is not supported, please remove all imported assets before changing it and reimport them afterwards.
+- **Tile Map Actor Class:** The class that will be used when instancing a Tile Map asset into a level. If you want to use your own class it must inherit from **[ATITileMapActor](../tilemaps/atitilemapactor.html)**. **Note:** Changing this after importing assets is not supported, please remove all imported assets before changing it and reimport them afterwards.
   
 - **Tile Set Class:** The class that will be used when importing a Tile Set asset. If you want to use your own class it must inherit from **[UTITileSet](../tilesets/utitileset.html)**. **Note:** Changing this after importing assets is not supported, please remove all imported assets before changing it and reimport them afterwards.
   
