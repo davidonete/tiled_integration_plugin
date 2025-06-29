@@ -17,7 +17,7 @@ If you want to extend the class either via C++ or Blueprint, you can specify in 
 ## Functions
 ### GetCustomProperties
 
-**C++:** &#9989; **Blueprint:** &#9989;
+**C++** &#9989; **Blueprint** &#9989;
 
 Gets the [Custom Properties](../custom-properties/index.md) of the Tile Map, where you can access all the individual properties stored for the Tile Map.
 
@@ -27,7 +27,7 @@ Gets the [Custom Properties](../custom-properties/index.md) of the Tile Map, whe
 
 ### GetTile
 
-**C++:** &#9989; **Blueprint:** &#9989;
+**C++** &#9989; **Blueprint** &#9989;
 
 Tries to get the [Tile Map Tile](../tiles/utitilemaptile.html) stored in the specified coordinates.
 
@@ -43,7 +43,7 @@ Tries to get the [Tile Map Tile](../tiles/utitilemaptile.html) stored in the spe
 
 ### GetLayer
 
-**C++:** &#9989; **Blueprint:** &#9989;
+**C++** &#9989; **Blueprint** &#9989;
 
 Tries to get the [Tile Layer](../layers/utitilelayer.html) in the Tile Map.
 
@@ -57,7 +57,7 @@ Tries to get the [Tile Layer](../layers/utitilelayer.html) in the Tile Map.
 
 ### FindLayersByName
 
-**C++:** &#9989; **Blueprint:** &#9989;
+**C++** &#9989; **Blueprint** &#9989;
 
 Retrieves a list of [Tile Layers](../layers/utitilelayer.html) which names match the one specified in `LayerName`. The search is case sensitive.
 
@@ -71,7 +71,7 @@ Retrieves a list of [Tile Layers](../layers/utitilelayer.html) which names match
 
 ### GetLayersAmount
 
-**C++:** &#9989; **Blueprint:** &#9989;
+**C++** &#9989; **Blueprint** &#9989;
 
 Gets the amount of [Tile Layers](../layers/utitilelayer.html) in this Tile Map.
 
@@ -81,7 +81,7 @@ Gets the amount of [Tile Layers](../layers/utitilelayer.html) in this Tile Map.
 
 ### GetTileWidth
 
-**C++:** &#9989; **Blueprint:** &#9989;
+**C++** &#9989; **Blueprint** &#9989;
 
 Gets the width (in pixels) of an individual [Tile](../tiles/index.md). (All tiles in the Tile Map have the same width)
 
@@ -91,7 +91,7 @@ Gets the width (in pixels) of an individual [Tile](../tiles/index.md). (All tile
 
 ### GetTileHeight
 
-**C++:** &#9989; **Blueprint:** &#9989;
+**C++** &#9989; **Blueprint** &#9989;
 
 Gets the height in pixels of an individual [Tile](../tiles/index.md). (All tiles in the Tile Map have the same height)
 
@@ -101,7 +101,7 @@ Gets the height in pixels of an individual [Tile](../tiles/index.md). (All tiles
 
 ### GetMapWidth
 
-**C++:** &#9989; **Blueprint:** &#9989;
+**C++** &#9989; **Blueprint** &#9989;
 
 Gets the amount of [Tiles](../tiles/index.md) that can fit horizontally in the Tile Map.
 
@@ -111,7 +111,7 @@ Gets the amount of [Tiles](../tiles/index.md) that can fit horizontally in the T
 
 ### GetMapHeight
 
-**C++:** &#9989; **Blueprint:** &#9989;
+**C++** &#9989; **Blueprint** &#9989;
 
 Gets the amount of [Tiles](../tiles/index.md) that can fit vertically in the Tile Map.
 
@@ -121,7 +121,7 @@ Gets the amount of [Tiles](../tiles/index.md) that can fit vertically in the Til
 
 ### GetProjectionMode
 
-**C++:** &#9989; **Blueprint:** &#9989;
+**C++** &#9989; **Blueprint** &#9989;
 
 Gets the projection mode of the Tile Map.
 
@@ -131,7 +131,7 @@ Gets the projection mode of the Tile Map.
 
 ### ForEachLayer
 
-**C++:** &#9989; **Blueprint:** &#9989;
+**C++** &#9989; **Blueprint** &#9989;
 
 Calls the given callback once per [Tile Layer](../layers/utitilelayer.html)
 
@@ -225,4 +225,4 @@ Converts the given tile index to tile coordinates.
 
 - **FIntVector:** The tile coordinates of the given tile index.
 
-**C++:** &#9989; **Blueprint:** &#10060;
+**C++** &#9989; **Blueprint** &#10060;
