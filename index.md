@@ -12,10 +12,10 @@ layout: default
   - **[Import a Tile Map](./tilemaps/import.html)**
   - **[Custom Properties](./tilemaps/custom-properties.html)**
   - **Classes**
-    - **[ATITileMapActor](./atitilemapactor.html)**
-    - **[UTITileMap](./utitilemap.html)**
-    - **[UTITileMapComponent](./utitilemapcomponent.html)**
-    - **[UTITileMapInstance](./utitilemapinstance.html)**
+    - **[ATITileMapActor](./tilemaps/atitilemapactor.html)**
+    - **[UTITileMap](./tilemaps/utitilemap.html)**
+    - **[UTITileMapComponent](./tilemaps/utitilemapcomponent.html)**
+    - **[UTITileMapInstance](./tilemaps/utitilemapinstance.html)**
 - **[Tile Sets](./tilesets/index.md)**
   - **[Import a Tile Set](./tilesets/import.html)**
   - **[Custom Properties](./tilesets/custom-properties.html)**
