@@ -22,7 +22,6 @@ If you want to extend the class either via C++ or Blueprint, you can specify in 
 Gets the [Custom Properties](../custom-properties/index.md) of the Tile Map, where you can access all the individual properties stored for the Tile Map.
 
 **Return**
-
 - **UTICustomProperties*:** The [Custom Properties](../custom-properties/index.md) of the Tile Map.
 
 ### GetTile
@@ -32,13 +31,11 @@ Gets the [Custom Properties](../custom-properties/index.md) of the Tile Map, whe
 Tries to get the [Tile Map Tile](../tiles/utitilemaptile.html) stored in the specified coordinates.
 
 **Arguments**
-
 - **X:** The horizontal coordinate within the [Tile Layer](../layers/utitilelayer.html).
 - **Y:** The vertical coordinate within the [Tile Layer](../layers/utitilelayer.html).
 - **Z:** The [Tile Layer](../layers/utitilelayer.html) index (from highest to lowest).
 
 **Return**
-
 - **UTITileMapTile*:** The [Tile Map Tile](../tiles/utitilemaptile.html) if there is a Tile in that coordinate, or null if it doesn't contain any Tiles.
 
 ### GetLayer
@@ -48,11 +45,9 @@ Tries to get the [Tile Map Tile](../tiles/utitilemaptile.html) stored in the spe
 Tries to get the [Tile Layer](../layers/utitilelayer.html) in the Tile Map.
 
 **Arguments**
-
 - **LayerIndex:** The layer index (from highest to lowest).
 
 **Return**
-
 - **UTITileLayer*:** The [Tile Layer](../layers/utitilelayer.html) or null if not found.
 
 ### FindLayersByName
@@ -62,11 +57,9 @@ Tries to get the [Tile Layer](../layers/utitilelayer.html) in the Tile Map.
 Retrieves a list of [Tile Layers](../layers/utitilelayer.html) which names match the one specified in `LayerName`. The search is case sensitive.
 
 **Arguments**
-
 - **LayerName:** The name of the [Tile Layer](../layers/utitilelayer.html) to look for (Case sensitive).
 
 **Return**
-
 - **TArray<UTITileLayer*>:** A list of [Tile Layers](../layers/utitilelayer.html) found.
 
 ### GetLayersAmount
@@ -76,7 +69,6 @@ Retrieves a list of [Tile Layers](../layers/utitilelayer.html) which names match
 Gets the amount of [Tile Layers](../layers/utitilelayer.html) in this Tile Map.
 
 **Return**
-
 - **int32:** The amount ot [Tile Layers](../layers/utitilelayer.html)
 
 ### GetTileWidth
@@ -86,7 +78,6 @@ Gets the amount of [Tile Layers](../layers/utitilelayer.html) in this Tile Map.
 Gets the width (in pixels) of an individual [Tile](../tiles/index.md). (All tiles in the Tile Map have the same width)
 
 **Return**
-
 - **int32:** The width of an individual [Tile](../tiles/index.md).
 
 ### GetTileHeight
@@ -96,7 +87,6 @@ Gets the width (in pixels) of an individual [Tile](../tiles/index.md). (All tile
 Gets the height in pixels of an individual [Tile](../tiles/index.md). (All tiles in the Tile Map have the same height)
 
 **Return**
-
 - **int32:** The height of an individual [Tile](../tiles/index.md).
 
 ### GetMapWidth
@@ -106,7 +96,6 @@ Gets the height in pixels of an individual [Tile](../tiles/index.md). (All tiles
 Gets the amount of [Tiles](../tiles/index.md) that can fit horizontally in the Tile Map.
 
 **Return**
-
 - **int32:** The amount of [Tiles](../tiles/index.md) that can fit horizontally.
 
 ### GetMapHeight
@@ -116,7 +105,6 @@ Gets the amount of [Tiles](../tiles/index.md) that can fit horizontally in the T
 Gets the amount of [Tiles](../tiles/index.md) that can fit vertically in the Tile Map.
 
 **Return**
-
 - **int32:** The amount of [Tiles](../tiles/index.md) that can fit vertically.
 
 ### GetProjectionMode
@@ -126,7 +114,6 @@ Gets the amount of [Tiles](../tiles/index.md) that can fit vertically in the Til
 Gets the projection mode of the Tile Map.
 
 **Return**
-
 - **ETileMapProjectionMode::Type:** The projection mode of the Tile Map (Orthogonal, IsometricDiamond, IsometricStaggered or HexagonalStaggered).
 
 ### ForEachLayer
@@ -136,7 +123,6 @@ Gets the projection mode of the Tile Map.
 Calls the given callback once per [Tile Layer](../layers/utitilelayer.html)
 
 **Arguments**
-
 - **Callback:** The function/lambda to be called per [Tile Layer](../layers/utitilelayer.html).
 - **Reversed:** Set to true to change the order from last to first (lowest to highest). If false the order will be from first to last (highest to lowest).
 
@@ -147,7 +133,6 @@ Calls the given callback once per [Tile Layer](../layers/utitilelayer.html)
 Calls the given callback once per [Tile Map Tile](../tiles/utitilemaptile.html) stored in the Tile Map.
 
 **Arguments**
-
 - **Callback:** The function/lambda to be called per [Tile Map Tile](../tiles/utitilemaptile.html).
 - **Reversed:** Set to true to change the order from last to first. If false the order will be from first to last.
 
@@ -158,7 +143,6 @@ Calls the given callback once per [Tile Map Tile](../tiles/utitilemaptile.html) 
 Calls the given callback once per tile coordinate within the Tile Map. The [Tile Map Tile](../tiles/utitilemaptile.html) returned may be null
 
 **Arguments**
-
 - **Callback:** The function/lambda to be called tile coordinate.
 - **Reversed:** Set to true to change the order from last to first. If false the order will be from first to last.
 
@@ -169,13 +153,11 @@ Calls the given callback once per tile coordinate within the Tile Map. The [Tile
 Gets the local position of the given tile coordinates relative to the Tile Map.
 
 **Arguments**
-
 - **X:** The horizontal coordinate within the [Tile Layer](../layers/utitilelayer.html).
 - **Y:** The vertical coordinate within the [Tile Layer](../layers/utitilelayer.html).
 - **Z:** The [Tile Layer](../layers/utitilelayer.html) index (from highest to lowest).
 
 **Return**
-
 - **FVector:** The position of the given tile coordinates in local space.
 
 ### GetTileSeparation
@@ -185,13 +167,11 @@ Gets the local position of the given tile coordinates relative to the Tile Map.
 Gets how high the given tile is, used for sorting the tile rendering.
 
 **Arguments**
-
 - **X:** The horizontal coordinate within the [Tile Layer](../layers/utitilelayer.html).
 - **Y:** The vertical coordinate within the [Tile Layer](../layers/utitilelayer.html).
 - **Z:** The [Tile Layer](../layers/utitilelayer.html) index (from highest to lowest).
 
 **Return**
-
 - **float:** The height of the given tile.
 
 ### TileCoordinatesToTileIndex
@@ -201,13 +181,11 @@ Gets how high the given tile is, used for sorting the tile rendering.
 Converts the given tile coordinates to tile index.
 
 **Arguments**
-
 - **X:** The horizontal coordinate within the [Tile Layer](../layers/utitilelayer.html).
 - **Y:** The vertical coordinate within the [Tile Layer](../layers/utitilelayer.html).
 - **Z:** The [Tile Layer](../layers/utitilelayer.html) index (from highest to lowest).
 
 **Return**
-
 - **int32:** The tile index of the given coordinates.
 
 ### TileIndexToTileCoordinates
@@ -217,12 +195,8 @@ Converts the given tile coordinates to tile index.
 Converts the given tile index to tile coordinates.
 
 **Arguments**
-
 - **TileIndex:** The tile index to convert.
 - **Layer:** The layer for the given tile index.
 
 **Return**
-
 - **FIntVector:** The tile coordinates of the given tile index.
-
-**C++** &#9989; **Blueprint** &#10060;
