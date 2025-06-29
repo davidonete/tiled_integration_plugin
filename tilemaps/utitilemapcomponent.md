@@ -7,7 +7,7 @@ layout: default
 # UTITileMapComponent
 
 ## Description
-This is the component that takes care of rendering the [Tile Map Instance](./utitilemapinstance.html) and is part of a [Tile Map Actor](./utitilemapactor.html).
+This is the component that takes care of rendering the [Tile Map Instance](./utitilemapinstance.html) and is part of a [Tile Map Actor](./atitilemapactor.html).
 
 ## Extend Class
 If you want to extend the class either via C++ or Blueprint, you can specify in the [Plugin Settings](../settings/index.md) what class the plugin should use, instead of the default one. Keep in mind that your class must be a child class from the original one you want to extend.
@@ -17,7 +17,7 @@ If you want to extend the class either via C++ or Blueprint, you can specify in 
 ## Functions
 ### GetTileMapInstance
 
-**C++** &#9989; **Blueprint** &#9989;
+**C++** &#9989; **Blueprint** &#10060;
 
 Gets the [Tile Map Instance](./utitilemapinstance.html) used by the Tile Map Component.
 
@@ -26,9 +26,9 @@ Gets the [Tile Map Instance](./utitilemapinstance.html) used by the Tile Map Com
 
 ### GetTileMapActor
 
-**C++** &#9989; **Blueprint** &#9989;
+**C++** &#9989; **Blueprint** &#10060;
 
-Gets the [Tile Map Actor](./utitilemapcomponent.html) that uses this Tile Map Component.
+Gets the [Tile Map Actor](./atitilemapcomponent.html) that uses this Tile Map Component.
 
 **Return**
-- **ATileMapActor:** The [Tile Map Actor](./utitilemapcomponent.html).
+- **ATileMapActor:** The [Tile Map Actor](./atitilemapcomponent.html).

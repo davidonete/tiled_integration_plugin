@@ -2,9 +2,9 @@
 layout: default
 ---
 
-[Home](../) / [Tile Maps](./index.md) / Classes / ATileMapActor
+[Home](../) / [Tile Maps](./index.md) / Classes / ATITileMapActor
 
-# ATileMapActor
+# ATITileMapActor
 
 ## Description
 This is the actor that will be created when instancing a [Tile Map](./utitilemap.html) asset, which contains a [Tile Map Component](./utitilemapcomponent.html) that takes care of rendering the [Tile Map Instance](./utitilemapinstance.html).
@@ -17,7 +17,7 @@ If you want to extend the class either via C++ or Blueprint, you can specify in 
 ## Functions
 ### GetTileMapInstance
 
-**C++** &#9989; **Blueprint** &#9989;
+**C++** &#9989; **Blueprint** &#10060;
 
 Gets the [Tile Map Instance](./utitilemapinstance.html) used by the Tile Map Actor.
 
@@ -26,7 +26,7 @@ Gets the [Tile Map Instance](./utitilemapinstance.html) used by the Tile Map Act
 
 ### GetTileMapComponent
 
-**C++** &#9989; **Blueprint** &#9989;
+**C++** &#9989; **Blueprint** &#10060;
 
 Gets the [Tile Map Component](./utitilemapcomponent.html) used by the Tile Map Actor.
 
