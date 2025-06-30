@@ -160,7 +160,7 @@ Gets the local position of the given tile coordinates relative to the Tile Map.
 **Return**
 - **FVector:** The position of the given tile coordinates in local space.
 
-### GetTileSeparation
+### GetTileSeparation (Overrideable)
 
 **C++** &#9989; **Blueprint** &#10060;
 
@@ -201,7 +201,7 @@ Converts the given tile index to tile coordinates.
 **Return**
 - **FIntVector:** The tile coordinates of the given tile index.
 
-### OnCustomPropertiesLoaded
+### OnCustomPropertiesLoaded (Overrideable)
 
 **C++** &#9989; **Blueprint** &#9989;
 
@@ -210,7 +210,7 @@ Called when the Tile Map [Custom Properties](../custom-properties/index.md) have
 **Arguments**
 - **Properties:** [Custom Properties](../custom-properties/index.md) loaded.
 
-### OnImported
+### OnImported (Overrideable)
 
 **C++** &#9989; **Blueprint** &#9989;
 

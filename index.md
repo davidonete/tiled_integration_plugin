@@ -19,7 +19,9 @@ layout: default
 - **[Tile Sets](./tilesets/index.md)**
   - **[Import a Tile Set](./tilesets/import.html)**
   - **[Custom Properties](./tilesets/custom-properties.html)**
-  - **[Functions](./tilesets/functions.html)**
+  - **Classes**
+    - **[UTITileSet](./tilesets/utitileset.html)**
+	- **[UTITileSetTile](./tiles/utitilesettile.html)**
 - **[Tile Layers](./layers/index.md)**
   - **Classes**
 	- **[UTITileLayer](./layers/utitilelayer.html)**

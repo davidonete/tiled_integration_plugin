@@ -224,7 +224,7 @@ Gets the local position of the given tile coordinates relative to the Tile Map.
 **Return**
 - **FVector:** The position of the given tile coordinates in local space.
 
-### GetTileSeparation
+### GetTileSeparation (Overrideable)
 
 **C++** &#9989; **Blueprint** &#10060;
 
@@ -265,13 +265,13 @@ Converts the given tile index to tile coordinates.
 **Return**
 - **FIntVector:** The tile coordinates of the given tile index.
 
-### OnInstanced
+### OnInstanced (Overrideable)
 
 **C++** &#9989; **Blueprint** &#9989;
 
 Called when the Tile Map Instance has been added to a level.
 
-### OnModified
+### OnModified (Overrideable)
 
 **C++** &#9989; **Blueprint** &#9989;
 
@@ -281,13 +281,13 @@ Called when the Tile Map Instance has been modified.
 - **Event:** The type of modification (TileAdded, TileRemoved, TileModified).
 - **AffectedObject:** The object that has been modified (The class will vary depending on the type of event).
 
-### OnPostLoad
+### OnPostLoad (Overrideable)
 
 **C++** &#9989; **Blueprint** &#9989;
 
 Called when the tile map instance has been loaded.
 
-### OnTick
+### OnTick (Overrideable)
 
 **C++** &#9989; **Blueprint** &#9989;
 

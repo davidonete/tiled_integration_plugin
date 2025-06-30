@@ -53,5 +53,3 @@ A predefined set of Custom Properties is available to download and apply to your
 **1.-** Download the predefined custom properties from [here](./tiled-custom-properties.json)
 
 **2.-** Open the Custom Types Editor in `View > Custom Types Editor`, click on `Import` on the top right corner and select the previously downloaded file.
-
-**3.-** To apply the properties to your map, open the Tile Map Properties in `Map > Map Properties` and set the class to `Map`. You should see new custom properties show for your map.

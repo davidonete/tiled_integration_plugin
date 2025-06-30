@@ -9,15 +9,15 @@ On this guide we will go over the steps to importing a tile map from Tiled to Un
 
 [Quick Video Guide](https://www.youtube.com/watch?v=AQnpu9husAo)
 
-**1.-** The first step is to create a Tile Set in Tiled to be able to use it in our Tile Map (you can skip this step if you want to embed the Tile Set into the Tile Map). Refer to the [Import a Tile Set](../tilesets/import.html) guide for more information.
+**1.-** The first step is to create a [Tile Set](../tilesets/index.md) in Tiled to be able to use it in our Tile Map (you can skip this step if you want to embed the Tile Set into the Tile Map). Refer to the [Import a Tile Set](../tilesets/import.html) guide for more information.
 
-**Note:** The plugin supports both embedded Tile Sets (which lives inside the Tile Map) or standalone Tile Sets (in a sepparate file). It is recommended to use standalone Tile Sets, so you can reuse them in different tile maps.
+**Note:** The plugin supports both embedded [Tile Sets](../tilesets/index.md) (which lives inside the Tile Map and will be imported with it) or standalone [Tile Sets](../tilesets/index.md) (in a sepparate file). It is recommended to use standalone [Tile Sets](../tilesets/index.md), so you can reuse them in different tile maps.
 
-**2.-** Once you have the Tile Set ready, we can proceed and create a Tile Map in Tiled and save it. At this time, the plugin only supports the **tmj** and **json** file extensions.
+**2.-** Once you have the [Tile Sets](../tilesets/index.md) ready, we can proceed and create a Tile Map in Tiled and save it. At this time, the plugin only supports the **tmj** and **json** file extensions.
 
-**Note:** The tile map file should be placed within the Content folder of your project in order to allow moving the project around and use the reimport feature. It is recommended to place your files in a folder structure like `<Project Folder>/Content/Maps/<YourMapFolder>/<YourMap>.json`
+**Note:** The Tile Map file should be placed within the `Content` folder of your project in order to allow moving the project around and use the reimport feature. It is recommended to place your files in a folder structure like `<Project Folder>/Content/Maps/<YourMapFolder>/<YourMap>.json`
 
-**3.-** Finally, to import the map to Unreal Engine, click the `Import` button on the plugin UI and follow the instructions. It will ask the file to import, where you should select the previously created Tile Map, and where to place the uasset file within the Content folder. It is recommended to place the imported file in the same folder as the Tiled file.
+**3.-** Finally, to import the map to Unreal Engine, click the `Import` button on the plugin UI and follow the instructions. It will ask the file to import, where you should select the previously created Tile Map, and where to place the uasset file within the `Content` folder. It is recommended to place the imported file in the same folder as the Tiled file.
 
 **Note:** Moving/Renaming the imported files or the original Tiled files after being imported is currently not supported. If you need to move or rename a file, you will have to delete the imported asset using the plugin UI button and import it again. 
 
