@@ -31,8 +31,6 @@ layout: default
 	- **[UTITileMapTile](./tiles/utitilemaptile.html)**
 	- **[UTITileMapTileInstance](./tiles/utitilemaptileinstance.html)**	
 	- **[UTITileSetTile](./tiles/utitilesettile.html)**
-- **[Tile Map Component](./component/index.md)**
-- **[Tile Map Actor](./actor/index.md)**
 - **[Custom Properties](./custom-properties/index.md)**
 - **[Plugin Settings](./settings/index.md)**
 

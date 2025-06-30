@@ -5,11 +5,11 @@ layout: default
 [Home](../) / Custom Properties
 
 ## Custom Properties
-Custom Properties is a feature from the Tiled Map Editor that allows you to store any kind of information on a Tile Map for later use in your project. This plugin allows accessing this information from your Unreal Engine project at any moment either from Blueprints or from C++.
+Custom Properties is a feature from the Tiled Map Editor that allows you to store any kind of information on a [Tile Map](../tilemaps/index.md), [Tile Set](../tilesets/index.md), [Tile Layer](../tilelayers/index.md) or [Tiles](../tiles/index.md) for later use in your project. This plugin allows accessing this information from your Unreal Engine project at any moment either from Blueprints or from C++.
 
-To access the Custom Properties of your Tile Map:
+To access the Custom Properties of any of your Tile classes:
 
-**1.-** Get a reference to the `UTITileMapInstance` placed in your level and use the `GetCustomProperties` method
+**1.-** Get a reference to the class placed in your level and use the `GetCustomProperties` method
 
 **2.-** From the `UTICustomProperties` class you will be able to access the Custom Properties by type:
 
