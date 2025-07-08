@@ -10,8 +10,8 @@
                 "value": 0
             },
             {
-                "name": "SubElevation",
-                "type": "int",
+                "name": "ElevationOffset",
+                "type": "float",
                 "value": 0
             },
             {
@@ -56,11 +56,6 @@
                 "name": "SeparationPerLayer",
                 "type": "float",
                 "value": 4
-            },
-            {
-                "name": "SeparationPerSubElevation",
-                "type": "float",
-                "value": 0
             },
             {
                 "name": "SeparationPerTileX",

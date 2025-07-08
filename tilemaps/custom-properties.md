@@ -19,8 +19,6 @@ Here is the list of custom properties that you can set up on your Tile Map:
 
 - **SeparationPerElevation:** Value to determine how separated (in the Z axis) are the layers based of the Elevation custom property.
 
-- **SeparationPerSubElevation:** Value to determine how separated (in the Z axis) are the layers based of the SubElevation custom property.
-
 - **CollisionThickness:** The extrusion thickness of collision geometry when using a 3D collision domain.
 
 A predefined set of Custom Properties is available to download and apply to your Tiled project, which includes all the above properties. You can set it up by following this guide:

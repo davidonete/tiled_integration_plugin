@@ -69,7 +69,7 @@ Retrieves a list of [Tile Layers](../layers/utitilelayer.html) whose names match
 Gets the amount of [Tile Layers](../layers/utitilelayer.html) in this Tile Map.
 
 **Return**
-- **int32:** The amount ot [Tile Layers](../layers/utitilelayer.html)
+- **int32:** The amount of [Tile Layers](../layers/utitilelayer.html)
 
 ### GetTileWidth
 

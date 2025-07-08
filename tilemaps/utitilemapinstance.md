@@ -115,7 +115,7 @@ Gets the amount of [Tile Layer Instances](../layers/utitilelayerinstances.html) 
 Gets the [Tile Map Component](./utitilemapcomponent.html) used by this Tile Map Instance.
 
 **Return**
-- **UTITileMapComponent:** [Tile Map Component](./utitilemapcomponent.html) used by this Tile Map Instance.
+- **UTITileMapComponent*:** [Tile Map Component](./utitilemapcomponent.html) used by this Tile Map Instance.
 
 ### GetTileMapActor
 
@@ -124,7 +124,7 @@ Gets the [Tile Map Component](./utitilemapcomponent.html) used by this Tile Map 
 Gets the [Tile Map Actor](./utitilemapactor.html) used by this Tile Map Instance.
 
 **Return**
-- **UTITileMapActor:** [Tile Map Actor](./utitilemapactor.html) used by this Tile Map Instance.
+- **UTITileMapActor*:** [Tile Map Actor](./utitilemapactor.html) used by this Tile Map Instance.
 
 ### GetTileWidth
 
@@ -285,13 +285,13 @@ Called when the Tile Map Instance has been modified.
 
 **C++** &#9989; **Blueprint** &#9989;
 
-Called when the tile map instance has been loaded.
+Called when the Tile Map Instance has been loaded.
 
 ### OnTick (Overrideable)
 
 **C++** &#9989; **Blueprint** &#9989;
 
-Called when the tile map instance ticks.
+Called when the Tile Map Instance ticks.
 
 **Arguments**
 - **DeltaTime:** Time (in seconds) since last tick.

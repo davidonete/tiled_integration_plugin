@@ -23,6 +23,7 @@ layout: default
     - **[UTITileSet](./tilesets/utitileset.html)**
 	- **[UTITileSetTile](./tiles/utitilesettile.html)**
 - **[Tile Layers](./layers/index.md)**
+  - **[Custom Properties](./layers/custom-properties.html)**
   - **Classes**
 	- **[UTITileLayer](./layers/utitilelayer.html)**
 	- **[UTITileLayerInstance](./layers/utitilelayerinstance.html)**	
@@ -41,11 +42,12 @@ This is the complete list of features currently available:
 * Import Tiled Tile Maps
 * Import Tiled Tile Sets (and textures)
 * Auto Reimport feature when modified from Tiled
-* Support for Custom Properties for Tile Maps, Tile Sets, Layers and Tiles
+* Custom Properties for Tile Maps, Tile Sets, Layers and Tiles
 * Support for setting up Collisions from Tiled
-* Support for Animated Tiles
+* Animated Tiles
+* Allow modifying the Tile Map at runtime
 
-**Note:** This tool expects the user to use Tiled as the main Tile Map and Tile Set editor, completely replacing the Unreal Engine Tilemap and Tileset editor. Doing changes such as modifying tiles, layers, collisions and/or dimensions directly into Unreal Engine is not supported and can lead to issues.
+**Note:** This tool expects the user to use Tiled as the main Tile Map and Tile Set editor, completely replacing the Unreal Engine Tile Map and Tile Set editor. Doing changes such as modifying tiles, layers, collisions and/or dimensions directly into Unreal Engine is not supported and can lead to issues.
 
 ## Get in touch
 If you find issues with the plugin please open a ticket [here](https://github.com/davidonete/tiled_integration_plugin/issues) with as much details as possible on what happened, how to reproduce and the expected result. We will look into it and reply back as soon as possible.
