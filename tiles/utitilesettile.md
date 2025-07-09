@@ -7,7 +7,7 @@ layout: default
 # UTITileSetTile
 
 ## Description
-This an individual Tile stored in a [Tile Set](./tilesets/utitileset.md) that was imported from Tiled and can only be modified from Tiled when importing or reimporting.
+This an individual Tile stored in a [Tile Set](./tilesets/utitileset.html) that was imported from Tiled and can only be modified from Tiled when importing or reimporting.
 
 ## Extend Class
 If you want to extend the class either via C++ or Blueprint, you can specify in the [Plugin Settings](../settings/index.md) what class the plugin should use, instead of the default one. Keep in mind that your class must be a child class from the original one you want to extend.
