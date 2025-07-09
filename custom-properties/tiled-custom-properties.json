@@ -89,6 +89,16 @@
                 "name": "Opacity",
                 "type": "float",
                 "value": 1
+            },
+			{
+                "name": "Group",
+                "type": "int",
+                "value": 0
+            },
+			{
+                "name": "UserDataName",
+                "type": "string",
+                "value": ""
             }
         ],
         "name": "Tile",

@@ -28,10 +28,12 @@ layout: default
 	- **[UTITileLayer](./layers/utitilelayer.html)**
 	- **[UTITileLayerInstance](./layers/utitilelayerinstance.html)**	
 - **[Tiles](./tiles/index.md)**
+  - **[Custom Properties](./tiles/custom-properties.html)**
   - **Classes**
-	- **[UTITileMapTile](./tiles/utitilemaptile.html)**
-	- **[UTITileMapTileInstance](./tiles/utitilemaptileinstance.html)**	
-	- **[UTITileSetTile](./tiles/utitilesettile.html)**
+    - **[UTITileMapTile](./tiles/utitilemaptile.html)**
+    - **[UTITileMapTileInstance](./tiles/utitilemaptileinstance.html)**
+    - **[UTITileSetTile](./tiles/utitilesettile.html)**
+    - **[UTITileMapTileGroup](./tiles/utitilemaptilegroup.html)**
 - **[Custom Properties](./custom-properties/index.md)**
 - **[Plugin Settings](./settings/index.md)**
 
@@ -46,6 +48,7 @@ This is the complete list of features currently available:
 * Support for setting up Collisions from Tiled
 * Animated Tiles
 * Allow modifying the Tile Map at runtime
+* Allow accessing tiles by group
 
 **Note:** This tool expects the user to use Tiled as the main Tile Map and Tile Set editor, completely replacing the Unreal Engine Tile Map and Tile Set editor. Doing changes such as modifying tiles, layers, collisions and/or dimensions directly into Unreal Engine is not supported and can lead to issues.
 

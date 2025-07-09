@@ -167,7 +167,7 @@ Converts the given tile index to tile coordinates.
 
 **C++** &#9989; **Blueprint** &#9989;
 
-Called when the Tile Map [Custom Properties](../custom-properties/index.md) have been loaded.
+Called when the [Custom Properties](../custom-properties/index.md) have been loaded.
 
 **Arguments**
 - **Properties:** [Custom Properties](../custom-properties/index.md) loaded.
