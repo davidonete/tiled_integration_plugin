@@ -117,15 +117,6 @@ Gets the [Tile Map Component](./utitilemapcomponent.html) used by this Tile Map 
 **Return**
 - **UTITileMapComponent*:** [Tile Map Component](./utitilemapcomponent.html) used by this Tile Map Instance.
 
-### GetTileMapActor
-
-**C++** &#9989; **Blueprint** &#9989;
-
-Gets the [Tile Map Actor](./utitilemapactor.html) used by this Tile Map Instance.
-
-**Return**
-- **UTITileMapActor*:** [Tile Map Actor](./utitilemapactor.html) used by this Tile Map Instance.
-
 ### GetTileWidth
 
 **C++** &#9989; **Blueprint** &#9989;
@@ -179,6 +170,19 @@ Checks if the Tile Map Instance is currently visible in the viewport.
 
 **Return**
 - **bool:** True if the Tile Map Instance is visible in the viewport.
+
+### GetGroups
+
+**C++** &#9989; **Blueprint** &#9989;
+
+Get all the [Tile Groups](../tiles/utitilemaptilegroup.html) of the Tile Map by the specified [Tile Set](../tilesets/utitileset.html) and Group ID.
+
+**Arguments**
+- **TileSet:** The [Tile Set](../tilesets/utitileset.html) of the group.
+- **GroupID:** The ID of the group (specified in the [Tile Set Tile Custom Properties](../tiles/utitilesettile.html))
+
+**Return**
+- **TArray<UTITileMapTileGroup*>:** A list of groups found for the specified [Tile Set](../tilesets/utitileset.html) and Group ID.
 
 ### ForEachLayerInstance
 

@@ -80,15 +80,6 @@ Gets the [Tile Map Component](../tilemaps/utitilemapcomponent.html) used by this
 **Return**
 - **UTITileMapComponent*:** [Tile Map Component](../tilemaps/utitilemapcomponent.html) used by this Tile Layer Instance.
 
-### GetTileMapActor
-
-**C++** &#9989; **Blueprint** &#9989;
-
-Gets the [Tile Map Actor](../tilemaps/utitilemapactor.html) used by this Tile Layer Instance.
-
-**Return**
-- **UTITileMapActor*:** [Tile Map Actor](../tilemaps/utitilemapactor.html) used by this Tile Layer Instance.
-
 ### GetTileMapInstance
 
 **C++** &#9989; **Blueprint** &#9989;
