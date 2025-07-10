@@ -58,6 +58,15 @@ If you find issues with the plugin please open a ticket [here](https://github.co
 Alternatively you can join our [discord channel](https://discord.gg/C4eEcVgfmb) where you can report issues or request features, as well as ask for help or advice on related topics.
 
 ## Updates
+### v1.7 (10/07/2025)
+* Fix Tile Set Tiles custom properties not resetting properly
+* Implement Tile Map Grouping
+* Fix crash when deleting resource while being used in map
+* Fix animated tiles rendering with wrong pivot point
+* Replace SubElevation layer custom property with ElevationOffset
+* Allow adding tile map assets to blueprints
+* Add method to spawn tile maps on runtime
+
 ### v1.6 (27/06/2025)
 * Upgrade to 5.6
 * Fix player and visibility collision
