@@ -32,3 +32,22 @@ Gets the [Tile Map Component](./utitilemapcomponent.html) used by the Tile Map A
 
 **Return**
 - **UTileMapComponent:** The [Tile Map Component](./utitilemapcomponent.html) used.
+
+### SpawnTileMap
+
+**C++** &#9989; **Blueprint** &#10060;
+
+Spawns a Tile Map Actor with the given parameters
+
+**Arguments**
+- **WorldContextObject:** The world context where the Tile Map Actor will spawn to.
+- **TileMap:** The [Tile Map](./utitilemap.html) to spawn.
+- **Position:** The position of the spawned Tile Map Actor.
+- **Rotation:** The rotation of the spawned Tile Map Actor.
+- **TileMapActorClass:** The class to use for the Tile Map Actor. (Leave empty to use ATITileMapActor)
+- **TileMapInstanceClass:** The class to use for the Tile Map Instance. (Leave empty to use UTITileMapInstance)
+- **TileLayerInstanceClass:** The class to use for the Tile Layer Instance. (Leave empty to use UTITileLayerInstance)
+- **TileMapTileInstanceClass:** The class to use for the Tile Map Tile Instance. (Leave empty to use UTITileMapTileInstance)
+
+**Return**
+- **ATITileMapActor:** The Tile Map Actor spawned.
