@@ -77,7 +77,7 @@ Gets the Group ID specified in the [Tile Set Tile](./utitilesettile.html).
 Gets the [Group of Tiles](./utitilemaptilegroup.html) specified in the [Tile Set Tile](./utitilesettile.html).
 
 **Return**
-- **UTITileMapTileGroup+:** [Group of Tiles](./utitilemaptilegroup.html) specified in the [Tile Set Tile](./utitilesettile.html).
+- **UTITileMapTileGroup*:** [Group of Tiles](./utitilemaptilegroup.html) specified in the [Tile Set Tile](./utitilesettile.html).
 
 ### GetTileMapComponent
 
