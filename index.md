@@ -58,6 +58,16 @@ If you find issues with the plugin please open a ticket [here](https://github.co
 Alternatively you can join our [discord channel](https://discord.gg/C4eEcVgfmb) where you can report issues or request features, as well as ask for help or advice on related topics.
 
 ## Updates
+### v1.8 (14/07/2025)
+* Prevent auto reimporting resources on loading
+* Fix the postload method getting called before the object has actually loaded
+* Fix bulk delete of resources issue
+* Fix collisions not being generated at spawn time or when the tile map is modified
+* Set the pivot point of sprites based on the tile map type
+* Fix rotation for animated tiles
+* Fix missing references on manually set up tile map components
+* Prevent running the resource manager when packaging projects
+
 ### v1.7 (10/07/2025)
 * Fix Tile Set Tiles custom properties not resetting properly
 * Implement Tile Map Grouping
