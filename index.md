@@ -58,6 +58,15 @@ If you find issues with the plugin please open a ticket [here](https://github.co
 Alternatively you can join our [discord channel](https://discord.gg/C4eEcVgfmb) where you can report issues or request features, as well as ask for help or advice on related topics.
 
 ## Updates
+### v1.9 (26/07/2025)
+* Add tile opacity transition feature
+* Force reimport resources when pressing reimport button
+* Add batch modify sprite pivot point tool
+* Add batch asset replace tool
+* Add tile bounds feature
+* Add support for moving imported assets
+* Add support for changing the imported source file
+
 ### v1.8 (14/07/2025)
 * Prevent auto reimporting resources on loading
 * Fix the postload method getting called before the object has actually loaded
