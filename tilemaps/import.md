@@ -19,9 +19,14 @@ On this guide we will go over the steps to importing a tile map from Tiled to Un
 
 **3.-** Finally, to import the map to Unreal Engine, click the `Import` button on the plugin UI and follow the instructions. It will ask the file to import, where you should select the previously created Tile Map, and where to place the uasset file within the `Content` folder. It is recommended to place the imported file in the same folder as the Tiled file.
 
-**Note:** Moving/Renaming the imported files or the original Tiled files after being imported is currently not supported. If you need to move or rename a file, you will have to delete the imported asset using the plugin UI button and import it again. 
-
 **Note:** You can set up some Unreal Engine properties on the tile map (such as `Pixels Per Unreal Unit` or `Separation Per Layer`) from Tiled and will get automatically set up when importing. Check out the [Custom Properties](./custom-properties.html) for more information.
+
+## Move/Rename a Tile Map
+You can move/rename your imported files from within Unreal by just drag and droping the files in the Content Browser.
+
+If you want to move/rename the original Tiled file you can do that on your OS File System and then click on `Change` in the Plugin UI next to the `Source`.
+
+**Note:** When changing the source file of a tile map, the name of the file must match the previous name it had before.
 
 ## Reimport a Tile Map
 If at some point you make changes to the Tile Map in Tiled and you want to bring them over to Unreal Engine, is just as easy as clicking `Reimport` on the plugin UI. 
@@ -32,3 +37,5 @@ Alternatively, you can automate the process by enabling the `Auto Reimport` feat
 To delete an imported Tile Map, click on the `Delete` button in the plugin UI and it will delete the Tile Map and any embedded Tile Sets that were imported with it.
 
 **Note:** Do not try to delete the files imported to Unreal Engine manually, as it will cause issues with the plugin. Always use the plugin UI to manage the imported files.
+
+**Note:** Embedded files (such as tile sets or flipbooks) can't be deleted manually and will only get removed when the owning file is deleted.

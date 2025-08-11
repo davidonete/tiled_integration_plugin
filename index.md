@@ -41,14 +41,19 @@ layout: default
 This is a plugin for Unreal Engine 5 that simplifies the work of importing Tile Maps and Tile Sets made with [Tiled](https://www.mapeditor.org/). In addition it adds some quality time improvements and fixes to the original system. 
 
 This is the complete list of features currently available:
-* Import Tiled Tile Maps
-* Import Tiled Tile Sets (and textures)
-* Auto Reimport feature when modified from Tiled
-* Custom Properties for Tile Maps, Tile Sets, Layers and Tiles
-* Support for setting up Collisions from Tiled
+* Import Tile Maps
+* Import Tile Sets
+* Import Textures
+* Auto Reimport
+* Custom Properties
+* Collisions
 * Animated Tiles
-* Allow modifying the Tile Map at runtime
-* Allow accessing tiles by group
+* Modify Tile Maps at runtime
+* Tile Grouping
+* Normal maps
+* Batch asset replace tool
+* Batch modify sprite pivot point tool
+* Batch flipbook extractor tool
 
 **Note:** This tool expects the user to use Tiled as the main Tile Map and Tile Set editor, completely replacing the Unreal Engine Tile Map and Tile Set editor. Doing changes such as modifying tiles, layers, collisions and/or dimensions directly into Unreal Engine is not supported and can lead to issues.
 
@@ -58,6 +63,16 @@ If you find issues with the plugin please open a ticket [here](https://github.co
 Alternatively you can join our [discord channel](https://discord.gg/C4eEcVgfmb) where you can report issues or request features, as well as ask for help or advice on related topics.
 
 ## Updates
+### v1.10 (11/08/2025)
+* Fix crash on calculating tile bounds
+* Add support to use custom tile map tile group class
+* Fix texture import crash
+* Fix modify sprite pivot point tool
+* Add flipbook extractor tool
+* Add support for normal maps
+* Allow manually importing texture
+* Fix to prevent saving state before fully loading the resources
+
 ### v1.9 (26/07/2025)
 * Add tile opacity transition feature
 * Force reimport resources when pressing reimport button

@@ -17,6 +17,8 @@ Here is the list of custom properties that you can set up on your Tile Set:
 
 - **PadToPowerOf2:** Should we pad the conditioned texture to the next power of 2 when conditioning the texture.
 
+- **NormalMap:** The normal map texture that will be used for this tile set. (This will only be visible if the tile map uses a lit material that uses normals)
+
 A predefined set of Custom Properties is available to download and apply to your Tiled project, which includes all the above properties. You can set it up by following this guide:
 
 **1.-** Download the predefined custom properties from [here](../custom-properties/tiled-custom-properties.json)
