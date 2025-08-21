@@ -1,85 +1,191 @@
 [
-    {
-        "color": "#ffa0a0a4",
-        "drawFill": true,
-        "id": 2,
-        "members": [
-            {
-                "name": "Elevation",
-                "type": "int",
-                "value": 0
-            },
-            {
-                "name": "ElevationOffset",
-                "type": "float",
-                "value": 0
-            },
-            {
-                "name": "CollisionEnabled",
-                "type": "bool",
-                "value": true
-            },
+	{
+		"color": "#ffa0a0a4",
+		"drawFill": true,
+		"id": 5,
+		"members": [
 			{
-                "name": "CollisionThickness",
-                "type": "float",
-                "value": 50
-            },
+				"name": "Collision",
+				"propertyType": "TileLayerCollisionSettings",
+				"type": "class",
+				"value": {
+				}
+			},
 			{
-                "name": "CollisionOffset",
-                "type": "float",
-                "value": 0
-            }
-        ],
-        "name": "Layer",
-        "type": "class",
-        "useAs": [
-            "layer",
-            "project"
-        ]
-    },
-    {
-        "color": "#ffa0a0a4",
-        "drawFill": true,
-        "id": 3,
-        "members": [
-            {
-                "name": "PixelsPerUnrealUnit",
-                "type": "float",
-                "value": 1
-            },
-            {
-                "name": "SeparationPerElevation",
-                "type": "float",
-                "value": 0
-            },
-            {
-                "name": "SeparationPerLayer",
-                "type": "float",
-                "value": 4
-            },
-            {
-                "name": "SeparationPerTileX",
-                "type": "float",
-                "value": 0
-            },
-            {
-                "name": "SeparationPerTileY",
-                "type": "float",
-                "value": 0
-            },
+				"name": "Elevation",
+				"propertyType": "TileLayerElevationSettings",
+				"type": "class",
+				"value": {
+				}
+			}
+		],
+		"name": "TileLayer",
+		"type": "class",
+		"useAs": [
+			"layer",
+			"project"
+		]
+	},
+	{
+		"color": "#ffa0a0a4",
+		"drawFill": true,
+		"id": 21,
+		"members": [
 			{
-                "name": "CollisionThickness",
-                "type": "float",
-                "value": 50
-            }
-        ],
-        "name": "Map",
-        "type": "class",
-        "useAs": [
-            "map",
-            "project"
-        ]
-    },
+				"name": "Enabled",
+				"type": "bool",
+				"value": true
+			},
+			{
+				"name": "Offset",
+				"type": "float",
+				"value": 0
+			},
+			{
+				"name": "Thickness",
+				"type": "float",
+				"value": 50
+			}
+		],
+		"name": "TileLayerCollisionSettings",
+		"type": "class",
+		"useAs": [
+			"property"
+		]
+	},
+	{
+		"color": "#ffa0a0a4",
+		"drawFill": true,
+		"id": 22,
+		"members": [
+			{
+				"name": "Elevation",
+				"type": "int",
+				"value": 0
+			},
+			{
+				"name": "ElevationOffset",
+				"type": "float",
+				"value": 0
+			},
+			{
+				"name": "SubElevation",
+				"type": "int",
+				"value": 0
+			}
+		],
+		"name": "TileLayerElevationSettings",
+		"type": "class",
+		"useAs": [
+			"property"
+		]
+	},
+	{
+		"color": "#ff7094a4",
+		"drawFill": true,
+		"id": 8,
+		"members": [
+			{
+				"name": "Collision",
+				"propertyType": "TileMapCollisionSettings",
+				"type": "class",
+				"value": {
+				}
+			},
+			{
+				"name": "General",
+				"propertyType": "TileMapGeneralSettings",
+				"type": "class",
+				"value": {
+				}
+			},
+			{
+				"name": "Separation",
+				"propertyType": "TileMapSeparationSettings",
+				"type": "class",
+				"value": {
+					"Layer": 4
+				}
+			}
+		],
+		"name": "TileMap",
+		"type": "class",
+		"useAs": [
+			"map",
+			"project"
+		]
+	},
+	{
+		"color": "#ffa0a0a4",
+		"drawFill": true,
+		"id": 16,
+		"members": [
+			{
+				"name": "Thickness",
+				"type": "float",
+				"value": 50
+			}
+		],
+		"name": "TileMapCollisionSettings",
+		"type": "class",
+		"useAs": [
+			"property"
+		]
+	},
+	{
+		"color": "#ffa0a0a4",
+		"drawFill": true,
+		"id": 19,
+		"members": [
+			{
+				"name": "PixelsPerUnrealUnit",
+				"type": "float",
+				"value": 1
+			}
+		],
+		"name": "TileMapGeneralSettings",
+		"type": "class",
+		"useAs": [
+			"property"
+		]
+	},
+	{
+		"color": "#ffa0a0a4",
+		"drawFill": true,
+		"id": 18,
+		"members": [
+			{
+				"name": "Elevation",
+				"type": "float",
+				"value": 0
+			},
+			{
+				"name": "Layer",
+				"type": "float",
+				"value": 5
+			},
+			{
+				"name": "SubElevation",
+				"type": "float",
+				"value": 0
+			},
+			{
+				"name": "TileX",
+				"type": "float",
+				"value": 0
+			},
+			{
+				"name": "TileY",
+				"type": "float",
+				"value": 0
+			}
+		],
+		"name": "TileMapSeparationSettings",
+		"type": "class",
+		"useAs": [
+			"property"
+		]
+	},
     {
         "color": "#ffa0a0a4",
         "drawFill": true,
@@ -108,43 +214,62 @@
             "project"
         ]
     },
-    {
-        "color": "#ffa0a0a4",
-        "drawFill": true,
-        "id": 10,
-        "members": [
-            {
-                "name": "ConditionTexture",
-                "type": "bool",
-                "value": false
-            },
-            {
-                "name": "ExtrusionAmount",
-                "type": "int",
-                "value": 2
-            },
-            {
-                "name": "FillWithTransparentBlack",
-                "type": "bool",
-                "value": true
-            },
+	{
+		"color": "#ffa0a0a4",
+		"drawFill": true,
+		"id": 13,
+		"members": [
+			{
+				"name": "Condition",
+				"propertyType": "TileSetConditionTextureSettings",
+				"type": "class",
+				"value": {
+				}
+			},
 			{
 				"name": "NormalMap",
 				"type": "file",
 				"value": ""
-            },
-            {
-                "name": "PadToPowerOf2",
-                "type": "bool",
-                "value": true
-            }
-        ],
-        "name": "TileSet",
-        "type": "class",
-        "useAs": [
-            "property",
-            "tileset",
-            "project"
-        ]
-    }
+			}
+		],
+		"name": "TileSet",
+		"type": "class",
+		"useAs": [
+			"property",
+			"tileset",
+			"project"
+		]
+	},
+	{
+		"color": "#ffa0a0a4",
+		"drawFill": true,
+		"id": 20,
+		"members": [
+			{
+				"name": "Condition",
+				"type": "bool",
+				"value": false
+			},
+			{
+				"name": "ExtrusionAmount",
+				"type": "int",
+				"value": 2
+			},
+			{
+				"name": "FillWithTransparentBlack",
+				"type": "bool",
+				"value": true
+			},
+			{
+				"name": "PadToPowerOf2",
+				"type": "bool",
+				"value": true
+			}
+		],
+		"name": "TileSetConditionTextureSettings",
+		"type": "class",
+		"useAs": [
+			"property"
+		]
+	}
 ]

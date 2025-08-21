@@ -63,6 +63,13 @@ If you find issues with the plugin please open a ticket [here](https://github.co
 Alternatively you can join our [discord channel](https://discord.gg/C4eEcVgfmb) where you can report issues or request features, as well as ask for help or advice on related topics.
 
 ## Updates
+### v1.11 (21/08/2025)
+* Add sub elevation and separation per sub elevation custom properties
+* Organize default custom properties
+* Add helper library
+* Allow changing layer visibility in runtime
+* Enhance flipbook extractor tool to allow creating paper zd animations
+
 ### v1.10 (11/08/2025)
 * Fix crash on calculating tile bounds
 * Add support to use custom tile map tile group class
