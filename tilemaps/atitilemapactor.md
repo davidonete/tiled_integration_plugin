@@ -15,15 +15,6 @@ If you want to extend the class either via C++ or Blueprint, you can specify in 
 **Note:** Setting a new class override to be used by the plugin won't be applied to previously imported assets, you will have to delete and import the already existing assets after the settings have been changed.
 
 ## Functions
-### GetTileMapInstance
-
-**C++** &#9989; **Blueprint** &#10060;
-
-Gets the [Tile Map Instance](./utitilemapinstance.html) used by the Tile Map Actor.
-
-**Return**
-- **UTileMapInstance:** The [Tile Map Instance](./utitilemapinstance.html) used.
-
 ### GetTileMapComponent
 
 **C++** &#9989; **Blueprint** &#10060;
@@ -33,9 +24,45 @@ Gets the [Tile Map Component](./utitilemapcomponent.html) used by the Tile Map A
 **Return**
 - **UTileMapComponent:** The [Tile Map Component](./utitilemapcomponent.html) used.
 
-### SpawnTileMap
+### GetTileMapInstance
 
 **C++** &#9989; **Blueprint** &#10060;
+
+Gets the [Tile Map Instance](./utitilemapinstance.html) used by the Tile Map Actor.
+
+**Return**
+- **UTileMapInstance:** The [Tile Map Instance](./utitilemapinstance.html) used.
+
+### UsesTileMap
+
+**C++** &#9989; **Blueprint** &#9989;
+
+Checks if the Tile Map Actor uses the given [Tile Map](../tilemaps/utitilemap.html) asset.
+
+**Arguments**
+- **TileMap:** [Tile Map](../tilemaps/utitilemap.html) asset to check.
+
+**Return**
+- **bool:** True if the Tile Map Actor uses the given [Tile Map](../tilemaps/utitilemap.html) asset.
+
+### GetClasses
+
+**C++** &#9989; **Blueprint** &#9989;
+
+Gets the classes used to create the Tile Map Actor and other dependencies.
+
+**Return**
+- **FTITileClasses:** The classes used to create the Tile Map Actor and other dependencies.
+
+### OnInstanced (Overrideable)
+
+**C++** &#9989; **Blueprint** &#9989;
+
+Called when the Tile Map Actor has been added to a level.
+
+### SpawnTileMap
+
+**C++** &#9989; **Blueprint** &#9989;
 
 Spawns a Tile Map Actor with the given parameters
 
@@ -44,10 +71,7 @@ Spawns a Tile Map Actor with the given parameters
 - **TileMap:** The [Tile Map](./utitilemap.html) to spawn.
 - **Position:** The position of the spawned Tile Map Actor.
 - **Rotation:** The rotation of the spawned Tile Map Actor.
-- **TileMapActorClass:** The class to use for the Tile Map Actor. (Leave empty to use ATITileMapActor)
-- **TileMapInstanceClass:** The class to use for the Tile Map Instance. (Leave empty to use UTITileMapInstance)
-- **TileLayerInstanceClass:** The class to use for the Tile Layer Instance. (Leave empty to use UTITileLayerInstance)
-- **TileMapTileInstanceClass:** The class to use for the Tile Map Tile Instance. (Leave empty to use UTITileMapTileInstance)
+- **Classes:** The classes to use for creating the Tile Map Actor and other dependencies.
 
 **Return**
 - **ATITileMapActor:** The Tile Map Actor spawned.

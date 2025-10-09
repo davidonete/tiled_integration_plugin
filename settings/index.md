@@ -29,7 +29,13 @@ Here are the options that you can configure:
 
 - **Tile Set Tile Class:** The class that will be used to represent a tile within a Tile Set. If you want to use your own class it must inherit from **[UTITileSetTile](../tiles/utitilesettile.html)**. **Note:** Changing this after importing assets is not supported, please remove all imported assets before changing it and reimport them afterwards.
 
+- **Tile World Class:** The class that will be used when importing a Tile World asset. If you want to use your own class it must inherit from **[UTITileWorld](../worlds/utitileworld.html)**. **Note:** Changing this after importing assets is not supported, please remove all imported assets before changing it and reimport them afterwards.
+
+- **Tile World Instance Class:** The class that will be used when creating a Tile World asset. If you want to use your own class it must inherit from **[UTITileWorldInstance](../worlds/utitileworldinstance.html)**. **Note:** Changing this after importing assets is not supported, please remove all imported assets before changing it and reimport them afterwards.
+
 - **Tile Map Naming Convention:** The naming convention of the Tile Map assets generated when importing, where {0} is the name of the original Tile Map file.
+
+- **Tile World Naming Convention:** The naming convention of the Tile World assets generated when importing, where {0} is the name of the original Tile World file.
 
 - **Tile Set Naming Convention:** The naming convention of the Tile Set assets generated when importing, where {0} is the name of the original Tile Set file.
 

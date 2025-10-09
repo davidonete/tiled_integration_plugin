@@ -8,6 +8,7 @@ layout: default
 
 ## Table of Contents
 - **[Import a Tile Map](./import.html)**
+- **[Create a Blueprint](./blueprint.html)**
 - **[Custom Properties](./custom-properties.html)**
 - **Classes**
   - **[ATITileMapActor](./atitilemapactor.html)**

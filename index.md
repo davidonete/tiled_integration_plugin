@@ -10,6 +10,7 @@ layout: default
 - **[Getting Started](./getting-started.html)**
 - **[Tile Maps](./tilemaps/index.md)**
   - **[Import a Tile Map](./tilemaps/import.html)**
+  - **[Create a Blueprint](./tilemaps/blueprint.html)**
   - **[Custom Properties](./tilemaps/custom-properties.html)**
   - **Classes**
     - **[ATITileMapActor](./tilemaps/atitilemapactor.html)**
@@ -34,6 +35,13 @@ layout: default
     - **[UTITileMapTileInstance](./tiles/utitilemaptileinstance.html)**
     - **[UTITileSetTile](./tiles/utitilesettile.html)**
     - **[UTITileMapTileGroup](./tiles/utitilemaptilegroup.html)**
+- **[Tile Worlds](./worlds/index.md)**
+  - **[Import a Tile World](./worlds/import.html)**
+  - **[Create a Blueprint](./worlds/blueprint.html)**
+  - **Classes**
+    - **[ATITileWorldActor](./worlds/atitileworldactor.html)**
+    - **[UTITileWorld](./worlds/utitileworld.html)**
+    - **[UTITileWorldInstance](./worlds/utitileworldinstance.html)**
 - **[Custom Properties](./custom-properties/index.md)**
 - **[Plugin Settings](./settings/index.md)**
 
@@ -41,6 +49,7 @@ layout: default
 This is a plugin for Unreal Engine 5 that simplifies the work of importing Tile Maps and Tile Sets made with [Tiled](https://www.mapeditor.org/). In addition it adds some quality time improvements and fixes to the original system. 
 
 This is the complete list of features currently available:
+* Import Tile Worlds
 * Import Tile Maps
 * Import Tile Sets
 * Import Textures
@@ -54,6 +63,7 @@ This is the complete list of features currently available:
 * Batch asset replace tool
 * Batch modify sprite pivot point tool
 * Batch flipbook extractor tool
+* Blueprint support for Tile Map and Tile World actors
 
 **Note:** This tool expects the user to use Tiled as the main Tile Map and Tile Set editor, completely replacing the Unreal Engine Tile Map and Tile Set editor. Doing changes such as modifying tiles, layers, collisions and/or dimensions directly into Unreal Engine is not supported and can lead to issues.
 
@@ -63,6 +73,12 @@ If you find issues with the plugin please open a ticket [here](https://github.co
 Alternatively you can join our [discord channel](https://discord.gg/C4eEcVgfmb) where you can report issues or request features, as well as ask for help or advice on related topics.
 
 ## Updates
+### v1.12 (04/10/2025)
+* Fix pivot point for flipbook extractor tool
+* Add tile world support
+* Fix plugin UI to allow multiple resources with the same name
+* Allow creating tile map and tile world blueprints
+
 ### v1.11 (21/08/2025)
 * Add sub elevation and separation per sub elevation custom properties
 * Organize default custom properties
