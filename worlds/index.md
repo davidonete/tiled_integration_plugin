@@ -12,7 +12,7 @@ layout: default
 - **Classes**
   - **[ATITileWorldActor](./atitileworldactor.html)**
   - **[UTITileWorld](./utitileworld.html)**
-  - **[UTITileWorldInstance](../tiles/utitileworldinstance.html)**
+  - **[UTITileWorldInstance](./utitileworldinstance.html)**
   
 ## Description
 A Tile World is a collection of individual [Tile Maps](../tilemaps/utitilemap.html) each one having specific 2D coordinates. To create and modify a tile world, you will need to use the [Tiled Map Editor](https://www.mapeditor.org/) and afterwards [Import a Tile World](./import.html) to Unreal Engine in order to be able to use it in your project.

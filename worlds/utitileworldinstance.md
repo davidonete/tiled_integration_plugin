@@ -49,10 +49,10 @@ Checks if the Tile World Instance uses the given [Tile World](./utitileworld.htm
 
 **C++** &#9989; **Blueprint** &#9989;
 
-Gets an array of [Tile Map Components](./utitilemapcomponent.html) that are instantiated for this Tile World Instance.
+Gets an array of [Tile Map Components](../tilemaps/utitilemapcomponent.html) that are instantiated for this Tile World Instance.
 
 **Return**
-- **TArray<FTITileWorldInstanceMapData>&:** An array of [Tile Map Components](./utitilemapcomponent.html) instanced for this Tile World Instance.
+- **TArray[FTITileWorldInstanceMapData]:** An array of [Tile Map Components](../tilemaps/utitilemapcomponent.html) instanced for this Tile World Instance.
 
 ### UsesTileMap
 

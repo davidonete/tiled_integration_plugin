@@ -33,6 +33,8 @@ Here are the options that you can configure:
 
 - **Tile World Instance Class:** The class that will be used when creating a Tile World asset. If you want to use your own class it must inherit from **[UTITileWorldInstance](../worlds/utitileworldinstance.html)**. **Note:** Changing this after importing assets is not supported, please remove all imported assets before changing it and reimport them afterwards.
 
+- **Tile World Actor Class:** The class that will be used when instancing a Tile World asset into a level. If you want to use your own class it must inherit from **[ATITileWorldActor](../worlds/atitileworldactor.html)**. **Note:** Changing this after importing assets is not supported, please remove all imported assets before changing it and reimport them afterwards.
+
 - **Tile Map Naming Convention:** The naming convention of the Tile Map assets generated when importing, where {0} is the name of the original Tile Map file.
 
 - **Tile World Naming Convention:** The naming convention of the Tile World assets generated when importing, where {0} is the name of the original Tile World file.

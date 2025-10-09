@@ -22,7 +22,7 @@ If you want to extend the class either via C++ or Blueprint, you can specify in 
 Gets an array of [Tile Maps](./utitilemap.html) that are included in the Tile World.
 
 **Return**
-- **TArray<FTITileWorldMapData>&:** An array of [Tile Maps](./utitilemap.html) included in the Tile World.
+- **TArray[FTITileWorldMapData]:** An array of [Tile Maps](./utitilemap.html) included in the Tile World.
 
 ### OnImported (Overrideable)
 
