@@ -19,6 +19,10 @@ Here is the list of custom properties that you can set up on your Tile Layer:
 
 - **ElevationOffset:** Set this to add an height offset from the specified `Elevation`. It's recommended to use this to avoid Z-fighting when setting multiple layers to the same `Elevation`.
 
+- **VisibleInGame:** Set this to enable/disable visibility of the layer in the game.
+
+- **VisibleInEditor:** Set this to enable/disable visibility of the layer in the editor.
+
 A predefined set of Custom Properties is available to download and apply to your Tiled project, which includes all the above properties. You can set it up by following this guide:
 
 **1.-** Download the predefined custom properties from [here](../custom-properties/tiled-custom-properties.json)
