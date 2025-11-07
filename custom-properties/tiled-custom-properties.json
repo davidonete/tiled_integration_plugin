@@ -17,6 +17,13 @@
 				"type": "class",
 				"value": {
 				}
+			},
+			{
+				"name": "Visibility",
+				"propertyType": "TileLayerVisibilitySettings",
+				"type": "class",
+				"value": {
+				}
 			}
 		],
 		"name": "TileLayer",
@@ -75,6 +82,28 @@
 			}
 		],
 		"name": "TileLayerElevationSettings",
+		"type": "class",
+		"useAs": [
+			"property"
+		]
+	},
+	{
+		"color": "#ffa0a0a4",
+		"drawFill": true,
+		"id": 32,
+		"members": [
+			{
+				"name": "Editor",
+				"type": "bool",
+				"value": true
+			},
+			{
+				"name": "Game",
+				"type": "bool",
+				"value": true
+			}
+		],
+		"name": "TileLayerVisibilitySettings",
 		"type": "class",
 		"useAs": [
 			"property"
