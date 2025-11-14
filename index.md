@@ -73,6 +73,19 @@ If you find issues with the plugin please open a ticket [here](https://github.co
 Alternatively you can join our [discord channel](https://discord.gg/C4eEcVgfmb) where you can report issues or request features, as well as ask for help or advice on related topics.
 
 ## Updates
+### v1.13 (14/11/2025)
+* Fix issues with blueprint tile map and tile world
+* Fix resource loading issues
+* Fix tile worlds not considering pixels per unreal units for positioning tile maps
+* Add support to save and load presets for the flipbook extractor tool
+* Fix custom properties not navigating correctly through subclasses
+* Add support for copying custom properties from other custom properties
+* Add support for customizing the class creation of all tiled classes
+* Add template getters for ease of use of child classes
+* Add support for layer visibility in game and in editor
+* Fix browser extension tools not working on assets with child classes
+* Regenerate tile world actors and blueprints when tile maps get reimported
+
 ### v1.12 (04/10/2025)
 * Fix pivot point for flipbook extractor tool
 * Add tile world support
