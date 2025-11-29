@@ -73,6 +73,11 @@ If you find issues with the plugin please open a ticket [here](https://github.co
 Alternatively you can join our [discord channel](https://discord.gg/C4eEcVgfmb) where you can report issues or request features, as well as ask for help or advice on related topics.
 
 ## Updates
+### v1.14 (29/11/2025)
+* Add custom data table row handle to remove the need of specifying the data table and allow them to be tmap keys
+* Add begin play callback
+* Upgrade to 5.7
+
 ### v1.13 (14/11/2025)
 * Fix issues with blueprint tile map and tile world
 * Fix resource loading issues
