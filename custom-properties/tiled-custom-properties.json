@@ -220,21 +220,20 @@
         "drawFill": true,
         "id": 9,
         "members": [
-            {
-                "name": "Opacity",
-                "type": "float",
-                "value": 1
-            },
 			{
-                "name": "Group",
-                "type": "int",
-                "value": 0
-            },
+				"name": "General",
+				"propertyType": "TileGeneralSettings",
+				"type": "class",
+				"value": {
+				}
+			},
 			{
-                "name": "UserDataName",
-                "type": "string",
-                "value": ""
-            }
+				"name": "ActorSpawner",
+				"propertyType": "TileActorSpawnerSettings",
+				"type": "class",
+				"value": {
+				}
+			}
         ],
         "name": "Tile",
         "type": "class",
@@ -243,6 +242,57 @@
             "project"
         ]
     },
+	{
+		"color": "#ffa0a0a4",
+		"drawFill": true,
+		"id": 28,
+		"members": [
+			{
+				"name": "Group",
+				"type": "int",
+				"value": -1
+			},
+			{
+				"name": "Opacity",
+				"type": "float",
+				"value": 1
+			},
+			{
+                "name": "UserDataName",
+                "type": "string",
+                "value": ""
+            }
+		],
+		"name": "TileGeneralSettings",
+		"type": "class",
+		"useAs": [
+			"property"
+		]
+	},
+	{
+		"color": "#ffa0a0a4",
+		"drawFill": true,
+		"id": 39,
+		"members": [
+			{
+				"name": "ID",
+				"type": "string",
+				"value": ""
+			},
+			{
+				"name": "Offset",
+				"propertyType": "Vector",
+				"type": "class",
+				"value": {
+				}
+			}
+		],
+		"name": "TileActorSpawnerSettings",
+		"type": "class",
+		"useAs": [
+			"property"
+		]
+	},
 	{
 		"color": "#ffa0a0a4",
 		"drawFill": true,
@@ -296,6 +346,33 @@
 			}
 		],
 		"name": "TileSetConditionTextureSettings",
+		"type": "class",
+		"useAs": [
+			"property"
+		]
+	},
+	{
+		"color": "#ffa0a0a4",
+		"drawFill": true,
+		"id": 7,
+		"members": [
+			{
+				"name": "X",
+				"type": "float",
+				"value": 0
+			},
+			{
+				"name": "Y",
+				"type": "float",
+				"value": 0
+			},
+			{
+				"name": "Z",
+				"type": "float",
+				"value": 0
+			}
+		],
+		"name": "Vector",
 		"type": "class",
 		"useAs": [
 			"property"
