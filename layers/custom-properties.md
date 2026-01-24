@@ -9,19 +9,19 @@ You can specify some Unreal Engine properties for the Tile Layer from Tiled, whi
 
 Here is the list of custom properties that you can set up on your Tile Layer:
 
-- **CollisionEnabled:** Set this to enable/disable the collisions for this particular layer. (By default collisions are enabled)
+- **CollisionEnabled:** (bool) Set this to enable/disable the collisions for this particular layer. (By default collisions are enabled)
 
-- **CollisionOffset:** Set this to add a height offset to the generated collision shape.
+- **CollisionOffset:** (float) Set this to add a height offset to the generated collision shape.
 
-- **CollisionThickness:** Set this specify the thickness of the generated collision shape for this layer (By default the collision thickness is 50 units)
+- **CollisionThickness:** (float) Set this specify the thickness of the generated collision shape for this layer (By default the collision thickness is 50 units)
 
-- **Elevation:** Set this to override the rendering order of the layer (the higher the value the closer it will be to the camera) (if you set this on one layer you should set it of all the other layers too) (By default the order is determined by the layer order in Tiled)
+- **Elevation:** (int) Set this to override the rendering order of the layer (the higher the value the closer it will be to the camera) (if you set this on one layer you should set it of all the other layers too) (By default the order is determined by the layer order in Tiled)
 
-- **ElevationOffset:** Set this to add an height offset from the specified `Elevation`. It's recommended to use this to avoid Z-fighting when setting multiple layers to the same `Elevation`.
+- **ElevationOffset:** (float) Set this to add an height offset from the specified `Elevation`. It's recommended to use this to avoid Z-fighting when setting multiple layers to the same `Elevation`.
 
-- **VisibleInGame:** Set this to enable/disable visibility of the layer in the game.
+- **VisibleInGame:** (bool) Set this to enable/disable visibility of the layer in the game.
 
-- **VisibleInEditor:** Set this to enable/disable visibility of the layer in the editor.
+- **VisibleInEditor:** (bool) Set this to enable/disable visibility of the layer in the editor.
 
 A predefined set of Custom Properties is available to download and apply to your Tiled project, which includes all the above properties. You can set it up by following this guide:
 

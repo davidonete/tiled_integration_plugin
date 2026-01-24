@@ -29,6 +29,7 @@ layout: default
 	- **[UTITileLayer](./layers/utitilelayer.html)**
 	- **[UTITileLayerInstance](./layers/utitilelayerinstance.html)**	
 - **[Tiles](./tiles/index.md)**
+  - **[Tile Actor Spawner](./tiles/tile-actor-spawner.html)**
   - **[Custom Properties](./tiles/custom-properties.html)**
   - **Classes**
     - **[UTITileMapTile](./tiles/utitilemaptile.html)**
@@ -59,11 +60,11 @@ This is the complete list of features currently available:
 * Animated Tiles
 * Modify Tile Maps at runtime
 * Tile Grouping
-* Normal maps
-* Batch asset replace tool
-* Batch modify sprite pivot point tool
-* Batch flipbook extractor tool
+* Normal Maps
+* Batch Asset replace tool
+* Batch modify Sprite pivot point tool
 * Blueprint support for Tile Map and Tile World actors
+* Spawn UE Actors from Tiles
 
 **Note:** This tool expects the user to use Tiled as the main Tile Map and Tile Set editor, completely replacing the Unreal Engine Tile Map and Tile Set editor. Doing changes such as modifying tiles, layers, collisions and/or dimensions directly into Unreal Engine is not supported and can lead to issues.
 
@@ -73,6 +74,13 @@ If you find issues with the plugin please open a ticket [here](https://github.co
 Alternatively you can join our [discord channel](https://discord.gg/C4eEcVgfmb) where you can report issues or request features, as well as ask for help or advice on related topics.
 
 ## Updates
+### v1.15 (24/01/2026)
+* Fix class custom properties not serializing correctly
+* Add on destroyed callback method
+* Add Tile Actor Spawner system
+* Fix tile world blueprint not getting collisions on packaged builds
+* Fix tile map and tile world actors not initializing correctly when drag and dropped into a level
+
 ### v1.14 (29/11/2025)
 * Add custom data table row handle to remove the need of specifying the data table and allow them to be tmap keys
 * Add begin play callback

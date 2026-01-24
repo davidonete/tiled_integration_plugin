@@ -9,15 +9,15 @@ You can also specify some Unreal Engine properties for the Tile Set from Tiled, 
 
 Here is the list of custom properties that you can set up on your Tile Set:
 
-- **ConditionTexture:** Conditions the tile sheet texture for the selected tile set by duplicating tile edges to create a buffer zone around each tile. (Same as `Right Click > Condition Tile Sheet Texture`).
+- **ConditionTexture:** (bool) Conditions the tile sheet texture for the selected tile set by duplicating tile edges to create a buffer zone around each tile. (Same as `Right Click > Condition Tile Sheet Texture`).
 
-- **ExtrusionAmount:** The amount to extrude out from the edge of each tile (in pixels) when conditioning the texture.
+- **ExtrusionAmount:** (int) The amount to extrude out from the edge of each tile (in pixels) when conditioning the texture.
 
-- **FillWithTransparentBlack:** Should we use transparent black or white when filling the texture areas that aren't covered by tiles when conditioning the texture.
+- **FillWithTransparentBlack:** (bool) Should we use transparent black or white when filling the texture areas that aren't covered by tiles when conditioning the texture.
 
-- **PadToPowerOf2:** Should we pad the conditioned texture to the next power of 2 when conditioning the texture.
+- **PadToPowerOf2:** (bool) Should we pad the conditioned texture to the next power of 2 when conditioning the texture.
 
-- **NormalMap:** The normal map texture that will be used for this tile set. (This will only be visible if the tile map uses a lit material that uses normals)
+- **NormalMap:** (file) The normal map texture that will be used for this tile set. (This will only be visible if the tile map uses a lit material that uses normals)
 
 A predefined set of Custom Properties is available to download and apply to your Tiled project, which includes all the above properties. You can set it up by following this guide:
 

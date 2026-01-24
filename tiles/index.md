@@ -7,6 +7,7 @@ layout: default
 # Tiles
 
 ## Table of Contents
+- **[Tile Actor Spawner](./tile-actor-spawner.html)**
 - **[Custom Properties](./custom-properties.html)**
 - **Classes**
   - **[UTITileMapTile](./utitilemaptile.html)**

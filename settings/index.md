@@ -47,4 +47,6 @@ Here are the options that you can configure:
 
 - **Tile Set Sprite Naming Convention:** The naming convention of the Tile Set Sprites assets generated when importing, where {0} is the name of the Tile Set file and {1} is the ID of the Tile.
 
+- **Tile Actor Spawner Database:** The database of actors to spawn by the [Tile Actor Spawner](../tiles/tile-actor-spawner.html) system.
+
 ![Plugin Settings](https://davidonete.github.io/tiled_integration_plugin/assets/images/tiled_integration_plugin/plugin_settings.jpg)

@@ -9,7 +9,7 @@ layout: default
 
 **2.-** Once you have the [Tile Map](./utitilemap.html) asset ready, we can create a blueprint instance for it using one of the following methods
 
-- ```Right Click on the asset``` > ```Tiled Integration``` > ```Create Blueprint```
+- ```Right Click on the Asset``` > ```Tiled Integration``` > ```Create Blueprint```.
 
 - Create a actor blueprint with the [ATITileMapActor](./atitilemapactor.html) class or a children class from it, then open the blueprint and select the ```Render Component``` and set the ```Tile Map``` property to use the asset you want and finally compile and save.
 

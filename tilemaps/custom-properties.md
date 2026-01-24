@@ -9,17 +9,17 @@ You can also specify some Unreal Engine properties for the Tile Map from Tiled, 
 
 Here is the list of custom properties that you can set up on your Tile Map:
 
-- **PixelsPerUnrealUnit:** Set this to change the Pixels Per Unreal Unit setting on the Tile Map. (The scaling factor between pixels and Unreal units (cm) (e.g., 0.64 would make a 64 pixel wide tile take up 100 cm))
+- **PixelsPerUnrealUnit:** (float) Set this to change the Pixels Per Unreal Unit setting on the Tile Map. (The scaling factor between pixels and Unreal units (cm) (e.g., 0.64 would make a 64 pixel wide tile take up 100 cm))
 
-- **SeparationPerLayer:** Set this to change the Separation Per Layer setting on the Tile Map. (The Z-separation between each layer of the tile map)
+- **SeparationPerLayer:** (float) Set this to change the Separation Per Layer setting on the Tile Map. (The Z-separation between each layer of the tile map)
 
-- **SeparationPerTileX:** Set this to change the Separation Per Tile X setting on the Tile Map. (The Z-separation incurred as you travel in X)
+- **SeparationPerTileX:** (float) Set this to change the Separation Per Tile X setting on the Tile Map. (The Z-separation incurred as you travel in X)
 
-- **SeparationPerTileY:** Set this to change the Separation Per Tile Y setting on the Tile Map. (The Z-separation incurred as you travel in Y)
+- **SeparationPerTileY:** (float) Set this to change the Separation Per Tile Y setting on the Tile Map. (The Z-separation incurred as you travel in Y)
 
-- **SeparationPerElevation:** Value to determine how separated (in the Z axis) are the layers based of the Elevation custom property.
+- **SeparationPerElevation:** (float) Value to determine how separated (in the Z axis) are the layers based of the Elevation custom property.
 
-- **CollisionThickness:** The extrusion thickness of collision geometry when using a 3D collision domain.
+- **CollisionThickness:** (float) The extrusion thickness of collision geometry when using a 3D collision domain.
 
 A predefined set of Custom Properties is available to download and apply to your Tiled project, which includes all the above properties. You can set it up by following this guide:
 
