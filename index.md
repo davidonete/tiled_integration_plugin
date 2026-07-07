@@ -74,6 +74,19 @@ If you find issues with the plugin please open a ticket [here](https://github.co
 Alternatively you can join our [discord channel](https://discord.gg/C4eEcVgfmb) where you can report issues or request features, as well as ask for help or advice on related topics.
 
 ## Updates
+### v1.16 (07/07/2026)
+* Add get sprite size helper method
+* Add row name display method to customize data table row name display names
+* Replace resource timestamp with hash to detect file changes across repositories
+* Fix batch replace tool
+* Add widget reference property
+* Fix widget reference property not getting the correct parent
+* Add empty option to widget reference to allow explicitly specify a manual empty reference vs a non set reference
+* Fix data table row handles not saving properly
+* Add none option to data table row handle
+* Fix widget reference property not getting the reference when inside of a child user widget
+* Upgrade to 5.8
+
 ### v1.15 (24/01/2026)
 * Fix class custom properties not serializing correctly
 * Add on destroyed callback method
